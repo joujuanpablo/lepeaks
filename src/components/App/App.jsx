@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
-import '../App.css';
+import logo from '../../logo.svg';
+import '../../App.css';
 import { Switch, Route } from 'react-router-dom';
-import Header from './Header';
-import Contact from './Contact';
-import Events from './Events';
-import Gallery from './Gallery';
-import Home from './Home';
-import Story from './Story';
+import Header from '../Header/Header';
+import Contact from '../Contact/Contact';
+import Events from '../Events/Events';
+import Gallery from '../Gallery/Gallery';
+import Home from '../Home/Home';
+import Story from '../Story/Story';
 
 class App extends Component {
  
