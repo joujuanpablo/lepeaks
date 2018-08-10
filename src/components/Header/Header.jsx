@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'reactstrap';
+import MainNav from '../Navbar/Navbar';
 
 export default (props) => {
 
@@ -9,7 +9,7 @@ export default (props) => {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Le Peaks</h1>
-          <Button>Push me</Button>
+          <MainNav />
         </header>
     )
 }
