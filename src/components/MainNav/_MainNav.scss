@@ -1,0 +1,11 @@
+.main-nav {
+    height: 100px;
+
+    .navbar-brand {
+        height: 100%;
+    }
+
+    &--brand {
+        max-height: 100%;
+    }
+}

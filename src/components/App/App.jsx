@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../logo.svg';
+import logo from '../../images/logo-white.png';
 import '../../App.css';
 import { Switch, Route } from 'react-router-dom';
 import Header from '../Header/Header';
@@ -19,7 +19,7 @@ class App extends Component {
           <Route component={Contact} exact path='/contact'/>
           <Route component={Events} exact path='/events'/>
           <Route component={Gallery} exact path='/gallery'/>
-          <Route component={Home} exact path='/home'/>
+          <Route component={Home} exact path='/'/>
           <Route component={Story} exact path='/story'/>
         </Switch>
         <footer>

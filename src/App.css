@@ -1,3 +1,10 @@
+.main-nav {
+  height: 100px; }
+  .main-nav .navbar-brand {
+    height: 100%; }
+  .main-nav--brand {
+    max-height: 100%; }
+
 .App {
   text-align: center; }
 
