@@ -1,9 +1,9 @@
-@import 'styles/_variables.scss';
-@import 'styles/colors.scss';
-@import 'components/MainNav/_MainNav.scss';
+@import 'styles/_colors.scss';
 
 //components
-
+@import 'components/MainNav/_MainNav.scss';
+@import 'components/Header/_Header.scss';
+@import 'components/HeroImage/_HeroImage.scss';
 
 //Defaults
 .App {

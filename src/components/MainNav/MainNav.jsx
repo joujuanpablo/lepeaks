@@ -28,10 +28,10 @@ export default class MainNav extends React.Component {
     const { logo } = this.props;
 
     return (
-      <div>
-        <Navbar className="main-nav" color="light" light expand="md">
-          <NavbarBrand href="/">
-            <img className="main-nav--brand" alt="lepeaks logo" src={logo}/>
+      <div className="main-nav--wrapper">
+        <Navbar className="main-nav" dark expand="md">
+          <NavbarBrand href="/" className="main-nav--brand">
+            <img className="main-nav--brand-image" alt="lepeaks logo" src={logo}/>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
