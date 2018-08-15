@@ -1,17 +1,18 @@
 .main-nav--wrapper {
-    height: 60px;
+    height: 100%;
 
     .main-nav {
         height: 100%;
 
         .navbar-brand {
-            height: 100%;
+            height: 55%;
         }
     
         &--brand {
             height: 100%;
             transition: opacity 0.8s ease-in-out;
             opacity: 0.6;
+            display: flex;
 
             &-image{
                 height:100%;

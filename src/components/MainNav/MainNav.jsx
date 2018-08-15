@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink,
  } from 'reactstrap';
+ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class MainNav extends React.Component {
 
@@ -26,6 +27,7 @@ export default class MainNav extends React.Component {
 
   render() {
     const { logo } = this.props;
+    
 
     return (
       <div className="main-nav--wrapper">
@@ -47,6 +49,26 @@ export default class MainNav extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink href="/Contact">Contact</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/Contact">
+                <FontAwesomeIcon icon={['fab', 'instagram']} size="lg"/>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/Contact">
+                  <FontAwesomeIcon icon={['fab', 'facebook-square']} size="lg"/>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/Contact">
+                <FontAwesomeIcon icon={['fab', 'youtube']} size="lg"/>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/Contact">
+                  <FontAwesomeIcon icon={['fab', 'soundcloud']} size="lg" />
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>

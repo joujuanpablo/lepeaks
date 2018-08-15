@@ -8,6 +8,10 @@ import Events from '../Events/Events';
 import Gallery from '../Gallery/Gallery';
 import Home from '../Home/Home';
 import Story from '../Story/Story';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab); //font awesome
 
 class App extends Component {
  
