@@ -10,6 +10,7 @@ import Home from '../Home/Home';
 import Story from '../Story/Story';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import UnderConstruction from '../../images/underConstruction.gif';
 
 library.add(fab); //font awesome
 
@@ -18,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header logo={logo} poop="poop!"/>
+        <Header logo={logo} />
         <Switch>
           <Route component={Contact} exact path='/contact'/>
           <Route component={Events} exact path='/events'/>
@@ -26,8 +27,8 @@ class App extends Component {
           <Route component={Home} exact path='/'/>
           <Route component={Story} exact path='/story'/>
         </Switch>
+        <img src={UnderConstruction} alt="under construction"/>
         <footer>
-          here lies a footer to be built
         </footer>
       </div>
     );

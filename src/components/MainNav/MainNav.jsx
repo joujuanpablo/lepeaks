@@ -51,12 +51,12 @@ export default class MainNav extends React.Component {
                 <NavLink href="/Contact">Contact</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Contact">
+                <NavLink href="https://www.instagram.com/lepeaksmusic/">
                 <FontAwesomeIcon icon={['fab', 'instagram']} size="lg"/>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Contact">
+                <NavLink href="https://www.facebook.com/lepeaks">
                   <FontAwesomeIcon icon={['fab', 'facebook-square']} size="lg"/>
                 </NavLink>
               </NavItem>
@@ -66,7 +66,7 @@ export default class MainNav extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Contact">
+                <NavLink href="https://soundcloud.com/user-953480858">
                   <FontAwesomeIcon icon={['fab', 'soundcloud']} size="lg" />
                 </NavLink>
               </NavItem>
