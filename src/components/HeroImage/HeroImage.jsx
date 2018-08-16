@@ -11,7 +11,7 @@ export default (props) => {
 
     return (
         <div className="hero-image" style={style}>
-            <img src={textLogo} alt="" className="text-logo"/>
+            <img src={textLogo} alt="Le Peaks Music logo" className="text-logo"/>
         </div>
     )
 }
