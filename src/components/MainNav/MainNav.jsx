@@ -61,7 +61,7 @@ export default class MainNav extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Contact">
+                <NavLink href="https://www.youtube.com/channel/UC4gja3SBSN83BRz750O7ryw">
                 <FontAwesomeIcon icon={['fab', 'youtube']} size="lg"/>
                 </NavLink>
               </NavItem>
