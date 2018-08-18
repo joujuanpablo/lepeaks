@@ -8,6 +8,9 @@ import Events from '../Events/Events';
 import Gallery from '../Gallery/Gallery';
 import Home from '../Home/Home';
 import Story from '../Story/Story';
+import Footer from '../Footer/Footer';
+import TermsConds from '../TermsConds/TermsConds';
+import PrivacyPolicy from '../PrivacyPolicy/PrivacyPolicy';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import UnderConstruction from '../../images/underConstruction.gif';
@@ -26,10 +29,11 @@ class App extends Component {
           <Route component={Gallery} exact path='/gallery'/>
           <Route component={Home} exact path='/'/>
           <Route component={Story} exact path='/story'/>
+          <Route component={TermsConds} exact path='/terms-conditions'/>
+          <Route component={PrivacyPolicy} exact path='/privacy-policy'/>
         </Switch>
         <img src={UnderConstruction} alt="under construction"/>
-        <footer>
-        </footer>
+        <Footer />
       </div>
     );
   }

@@ -70,6 +70,11 @@ export default class MainNav extends React.Component {
                   <FontAwesomeIcon icon={['fab', 'soundcloud']} size="lg" />
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href="">
+                  <FontAwesomeIcon icon={['fab', 'spotify']} size="lg" />
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

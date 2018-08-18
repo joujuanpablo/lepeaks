@@ -46,6 +46,10 @@
   .hero-image .text-logo {
     height: 80px; }
 
+footer {
+  color: white;
+  background-color: black; }
+
 .App {
   text-align: center; }
 
