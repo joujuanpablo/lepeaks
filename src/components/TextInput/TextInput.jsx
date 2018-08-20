@@ -25,8 +25,12 @@ class TextInput extends React.Component {
         return (
         <form onSubmit={this.handleSubmit} className="text-input">
           <label>
-            <input type="text" className="text-input--field" placeholder="Enter your email address" value={this.state.value} onChange={this.handleChange} />
-            <FontAwesomeIcon icon={icon} size={'lg'} />
+              <div className="text-input--wrapper">
+                <input type="text" className="text-input--field" placeholder="Enter your email address" value={this.state.value} onChange={this.handleChange} />
+                <div className="text-input--icon">
+                    <FontAwesomeIcon icon={icon} size={'lg'} />
+                </div>
+              </div>
           </label>
         </form>
       );

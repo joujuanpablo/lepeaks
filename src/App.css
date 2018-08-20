@@ -54,29 +54,63 @@
         height: auto;
         max-width: 70vw; } }
 
-footer .solid {
-  background-color: #F6EAC9; }
-  footer .solid .admin-links {
-    display: flex;
-    justify-content: center;
-    color: #0E2024; }
+footer {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem; }
+  footer .solid {
+    background-color: #0E2024;
+    min-height: 150px;
+    padding: 30px; }
+    footer .solid .admin-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      color: #FFC327; }
+      footer .solid .admin-links a {
+        color: #FFC327;
+        padding-bottom: 10px; }
+    footer .solid .newsletter {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      color: white; }
+  footer .image {
+    background-image: url("images/Hero/brandon-mattingly.jpg");
+    background-size: cover;
+    height: 300px; }
+    footer .image .social-links {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly; }
+      footer .image .social-links a {
+        color: #CD224C; }
 
-footer .image {
-  background-image: url("images/Hero/brandon-mattingly.jpg");
-  background-size: cover;
-  height: 300px; }
-  footer .image .social-links {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; }
-
-.text-input label {
+.text-input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 20px 0;
   background-color: white;
-  border: 2px solid black; }
-  .text-input label .text-input--field {
-    border: none; }
+  color: black; }
+  .text-input label {
+    width: 100%;
+    margin: 0;
+    padding: 10px; }
+    .text-input label .text-input--wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .text-input label .text-input--wrapper .text-input--field {
+        flex-grow: 1; }
+      .text-input label .text-input--wrapper .text-input--icon {
+        padding: 0 5px; }
+      .text-input label .text-input--wrapper input {
+        border: none; }
+      .text-input label .text-input--wrapper input:focus {
+        outline: none; }
 
 .App {
   text-align: center; }
@@ -102,3 +136,6 @@ footer .image {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+
+.under-construction {
+  padding: 50px; }
