@@ -13,9 +13,10 @@ import TermsConds from '../TermsConds/TermsConds';
 import PrivacyPolicy from '../PrivacyPolicy/PrivacyPolicy';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import UnderConstruction from '../../images/underConstruction.gif';
 
-library.add(fab); //font awesome
+library.add(fab, faEnvelope); //font awesome brands
 
 class App extends Component {
  

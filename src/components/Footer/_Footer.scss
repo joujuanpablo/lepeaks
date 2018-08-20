@@ -1,4 +1,23 @@
 footer {
-    color: white;
-    background-color: black;
+    .solid {
+        background-color: $champagne;
+        .admin-links {
+            display: flex;
+            justify-content: center;
+            color: $dark-jungle-green;
+        }
+    }
+    .image {
+        background-image: url('images/Hero/brandon-mattingly.jpg');
+        background-size: cover;
+        height: 300px;
+
+        .social-links {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }

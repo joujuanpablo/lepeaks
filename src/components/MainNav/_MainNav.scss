@@ -7,6 +7,13 @@
         .navbar-brand {
             height: 55%;
         }
+
+        .navbar-collapse {
+            @include media-breakpoint-down(sm) {
+                margin-top: 20px;
+                background-color: $dark-jungle-green-90;
+            }
+        }
     
         &--brand {
             height: 100%;
