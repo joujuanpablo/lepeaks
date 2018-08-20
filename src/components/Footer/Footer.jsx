@@ -28,7 +28,7 @@ export default (props) => {
             <div className="solid"> 
                 <div className="container">
                     <div className="row">
-                        <div className="admin-links col-6">
+                        <div className="admin-links col-12 col-md-6">
                             <Link to={'/terms-conditions'}>Terms & Conditions</Link>
                             <Link to={'/privacy-policy'}>Privacy Policy</Link>
                             <Link to={'/contact'}>Contact</Link>
@@ -36,7 +36,7 @@ export default (props) => {
                                 © 2018 Le Peaks Music
                             </div>
                         </div>  
-                        <div className="newsletter col-6">
+                        <div className="newsletter col-12 col-md-6">
                             <div>
                                 Sign up for our newsletter
                             </div>

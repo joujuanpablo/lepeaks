@@ -28,7 +28,7 @@
       transition: opacity 0.8s ease-in-out; }
 
 .App-header.header {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.85rem;
   padding: 0;
   background-color: transparent;
@@ -52,10 +52,10 @@
     @media (max-width: 767.98px) {
       .hero-image .text-logo {
         height: auto;
-        max-width: 70vw; } }
+        max-width: 50vw; } }
 
 footer {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.85rem; }
   footer .solid {
     background-color: #0E2024;
@@ -65,15 +65,23 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      color: #FFC327; }
+      color: #FFC327;
+      padding-bottom: 20px; }
       footer .solid .admin-links a {
         color: #FFC327;
-        padding-bottom: 10px; }
+        padding-bottom: 10px;
+        transition: color 0.8s ease-in-out; }
+      footer .solid .admin-links a:hover {
+        color: #FFEEC4;
+        text-decoration: none;
+        transition: color 0.8s ease-in-out; }
     footer .solid .newsletter {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      color: white; }
+      color: white;
+      font-family: "Permanent Marker", cursive;
+      font-size: 0.9rem; }
   footer .image {
     background-image: url("images/Hero/brandon-mattingly.jpg");
     background-size: cover;
@@ -85,7 +93,11 @@ footer {
       align-items: center;
       justify-content: space-evenly; }
       footer .image .social-links a {
-        color: #CD224C; }
+        color: #CD224C;
+        transition: color 0.8s ease-in-out; }
+      footer .image .social-links a:hover {
+        color: #FF2B5C;
+        transition: color 0.8s ease-in-out; }
 
 .text-input {
   display: flex;
@@ -93,7 +105,9 @@ footer {
   width: 100%;
   margin: 20px 0;
   background-color: white;
-  color: black; }
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85rem; }
   .text-input label {
     width: 100%;
     margin: 0;
