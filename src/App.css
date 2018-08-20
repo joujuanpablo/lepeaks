@@ -45,6 +45,10 @@
   font-family: ''; }
   .hero-image .text-logo {
     height: 80px; }
+    @media (max-width: 767.98px) {
+      .hero-image .text-logo {
+        height: auto;
+        max-width: 70vw; } }
 
 footer {
   color: white;
@@ -58,7 +62,7 @@ footer {
   height: 80px; }
 
 .App-header {
-  background-color: #222;
+  background-color: #28a745;
   height: 150px;
   padding: 20px;
   color: white; }

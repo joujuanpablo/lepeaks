@@ -10,7 +10,12 @@
     color: white;
     font-family: '';
 
-    .text-logo{
+    .text-logo {
         height: 80px;
+        @include media-breakpoint-down(sm) {
+            height: auto;
+            max-width: 70vw;
+        }
     }
+
 }
