@@ -66,9 +66,9 @@ class Footer extends React.Component {
                                 <Link to={'/terms-conditions'}>Terms & Conditions</Link>
                                 <Link to={'/privacy-policy'}>Privacy Policy</Link>
                                 <Link to={'/contact'}>Contact</Link>
-                                <div>
+                                <p className="copyright">
                                     © 2018 Le Peaks Music
-                                </div>
+                                </p>
                             </div>  
                             <div className="newsletter col-12 col-md-6">
                                 <div>

@@ -58,12 +58,15 @@
   justify-content: center;
   color: white;
   font-family: ''; }
+  @media (max-width: 767.98px) {
+    .hero-image {
+      height: 300px; } }
   .hero-image .text-logo {
-    height: 80px; }
+    height: 60px; }
     @media (max-width: 767.98px) {
       .hero-image .text-logo {
         height: auto;
-        max-width: 60vw; } }
+        max-width: 50vw; } }
 
 footer {
   font-family: "Open Sans", sans-serif;
@@ -83,9 +86,12 @@ footer {
         padding-bottom: 10px;
         transition: color 0.8s ease-in-out; }
       footer .solid .admin-links a:hover {
-        color: #FFEEC4;
+        color: #ffe29a;
         text-decoration: none;
         transition: color 0.8s ease-in-out; }
+      footer .solid .admin-links .copyright {
+        font-size: 0.6rem;
+        margin-top: 10px; }
     footer .solid .newsletter {
       display: flex;
       flex-direction: column;
