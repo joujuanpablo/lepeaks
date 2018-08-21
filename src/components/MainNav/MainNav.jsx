@@ -10,7 +10,7 @@ import {
  } from 'reactstrap';
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default class MainNav extends React.Component {
+class MainNav extends React.Component {
 
   constructor(props) {
     super(props);
@@ -25,6 +25,25 @@ export default class MainNav extends React.Component {
     });
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScrollHeader);
+  }
+
+  componentWillUnmount() {
+    window.addEventListener('scroll', this.handleScrollHeader);
+  }
+
+  handleScrollHeader() {
+    let scrollTop = window.scrollY
+
+    if (scrollTop > 2) {
+       document.querySelector("header").classList.add("scrolled");
+    } else {
+      document.querySelector("header").classList.remove("scrolled");
+    }
+
+  }
+
   render() {
     const { logo } = this.props;
     
@@ -32,8 +51,8 @@ export default class MainNav extends React.Component {
     return (
       <div className="main-nav--wrapper">
         <Navbar className="main-nav" dark expand="md">
-          <NavbarBrand href="/" className="main-nav--brand">
-            <img className="main-nav--brand-image" alt="lepeaks logo" src={logo}/>
+          <NavbarBrand href="/" className="">
+            <img className="navbar-brand--image" alt="lepeaks logo" src={logo}/>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -82,3 +101,5 @@ export default class MainNav extends React.Component {
     );
   }
 }
+
+export default MainNav;
