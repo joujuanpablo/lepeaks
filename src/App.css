@@ -5,13 +5,13 @@
     .main-nav--wrapper .main-nav .navbar-brand {
       height: 100%;
       transition: opacity 0.8s ease-in-out;
-      opacity: 0.6;
+      opacity: 0.9;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
       .main-nav--wrapper .main-nav .navbar-brand:hover {
-        opacity: 0.9;
+        opacity: 1;
         transition: opacity 0.8s ease-in-out; }
       .main-nav--wrapper .main-nav .navbar-brand--image {
         height: 25px;
@@ -22,11 +22,11 @@
         background-color: rgba(14, 32, 36, 0.9); } }
     .main-nav--wrapper .main-nav a.nav-link {
       color: white;
-      opacity: 0.6;
+      opacity: 0.8;
       transition: opacity 0.8s ease-in-out; }
     .main-nav--wrapper .main-nav a.nav-link:hover {
       color: white;
-      opacity: 0.9;
+      opacity: 1;
       transition: opacity 0.8s ease-in-out; }
 
 .App-header.header {
@@ -48,7 +48,6 @@
     box-shadow: 0px 2px 15px -1px rgba(0, 0, 0, 0.6); }
 
 .hero-image {
-  height: 500px;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -61,6 +60,13 @@
   @media (max-width: 767.98px) {
     .hero-image {
       height: 300px; } }
+  .hero-image .intro-text {
+    font-family: "Amatic SC", cursive;
+    font-size: 1.5rem;
+    margin-top: 20px; }
+    @media (max-width: 767.98px) {
+      .hero-image .intro-text {
+        font-size: 1rem; } }
   .hero-image .text-logo {
     height: 60px; }
     @media (max-width: 767.98px) {
@@ -102,6 +108,7 @@ footer {
   footer .image {
     background-image: url("images/Hero/brandon-mattingly.jpg");
     background-size: cover;
+    background-position: center;
     height: 300px; }
     footer .image .social-links {
       height: 100%;
@@ -156,13 +163,16 @@ footer {
 .dtj-tip-button {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
   color: white;
   border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
   font-family: "Permanent Marker", cursive;
   transition: all 0.5s ease-in-out; }
+  @media (max-width: 767.98px) {
+    .dtj-tip-button {
+      font-size: 0.7rem; } }
   .dtj-tip-button .hover {
     opacity: 0;
     transition: all 0.5s ease-in-out;
@@ -183,6 +193,12 @@ footer {
     .dtj-tip-button:hover .hover {
       opacity: 1;
       transition: all 0.5s ease-in-out; }
+
+.homepage {
+  background-color: white; }
+  .homepage .text-container {
+    color: #859298;
+    padding: 80px; }
 
 .App {
   text-align: center; }

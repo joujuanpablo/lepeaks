@@ -1,13 +1,16 @@
 .dtj-tip-button {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     color: white;
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
     font-family: $marker;
     transition: all 0.5s ease-in-out;
+    @include media-breakpoint-down(sm) {
+        font-size: 0.7rem;
+    }
     
     .hover {
         opacity: 0;

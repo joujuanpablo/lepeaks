@@ -33,7 +33,7 @@ class App extends Component {
           <Route component={TermsConds} exact path='/terms-conditions'/>
           <Route component={PrivacyPolicy} exact path='/privacy-policy'/>
         </Switch>
-        <img className="under-construction" src={UnderConstruction} alt="under construction"/>
+        {/* <img className="under-construction" src={UnderConstruction} alt="under construction"/> */}
         <Footer />
       </div>
     );

@@ -1,5 +1,4 @@
 .hero-image {
-    height: 500px;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -11,6 +10,15 @@
     font-family: '';
     @include media-breakpoint-down(sm) {
         height: 300px;;
+    }
+
+    .intro-text {
+        font-family: $amatic;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        @include media-breakpoint-down(sm) {
+            font-size: 1rem;
+        }
     }
 
     .text-logo {
