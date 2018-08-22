@@ -14,7 +14,6 @@ import PrivacyPolicy from '../PrivacyPolicy/PrivacyPolicy';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import UnderConstruction from '../../images/underConstruction.gif';
 
 library.add(fab, faEnvelope); //font awesome brands
 
@@ -33,7 +32,6 @@ class App extends Component {
           <Route component={TermsConds} exact path='/terms-conditions'/>
           <Route component={PrivacyPolicy} exact path='/privacy-policy'/>
         </Switch>
-        {/* <img className="under-construction" src={UnderConstruction} alt="under construction"/> */}
         <Footer />
       </div>
     );

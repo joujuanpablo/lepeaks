@@ -59,7 +59,7 @@
   font-family: ''; }
   @media (max-width: 767.98px) {
     .hero-image {
-      height: 300px; } }
+      height: 300px !important; } }
   .hero-image .intro-text {
     font-family: "Amatic SC", cursive;
     font-size: 1.5rem;

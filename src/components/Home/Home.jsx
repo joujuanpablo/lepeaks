@@ -3,6 +3,8 @@ import HeroImage from '../HeroImage/HeroImage';
 import Image from '../../images/Hero/andrew-charney.jpg';
 import TipJarButton from '../../components/TipJarButton/TipJarButton';
 import textLogo from '../../images/text-logo.png';
+import UnderConstruction from '../../images/underConstruction.gif';
+
 
 
 export default (props) => {
@@ -17,7 +19,7 @@ export default (props) => {
                 <div className="row">
                     <div className="col-12 col-md">
                     <div className="text-container">
-                        Here must go a portrait of Le Peaks man
+                        <img className="under-construction" src={UnderConstruction} alt="under construction"/>
                     </div>
                         
                     </div>
