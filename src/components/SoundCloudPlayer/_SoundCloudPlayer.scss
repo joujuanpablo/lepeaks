@@ -1,0 +1,26 @@
+.soundcloud-player {
+    width: 400px;
+    height: 280px;
+    padding: 20px;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    
+    @include media-breakpoint-down (sm) {
+        height: 200px;
+        width: 200px;
+        padding: 10px 0 0 0;
+    }
+
+    &.player-hidden {
+        height: 0px;
+        width: 0px;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+    }
+
+    iframe {
+        -webkit-box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.6);
+        box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.6);
+    }
+}

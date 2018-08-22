@@ -59,7 +59,7 @@
   font-family: ''; }
   @media (max-width: 767.98px) {
     .hero-image {
-      height: 300px !important; } }
+      height: 500px !important; } }
   .hero-image .intro-text {
     font-family: "Amatic SC", cursive;
     font-size: 1.5rem;
@@ -194,11 +194,59 @@ footer {
       opacity: 1;
       transition: all 0.5s ease-in-out; }
 
+.text-button {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Permanent Marker", cursive;
+  transition: all 0.5s ease-in-out;
+  background-color: transparent; }
+  @media (max-width: 767.98px) {
+    .text-button {
+      font-size: 0.7rem; } }
+  .text-button:hover {
+    background-color: white;
+    color: #0E2024;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    cursor: pointer; }
+  .text-button:focus {
+    outline: none; }
+
+.soundcloud-player {
+  width: 400px;
+  height: 280px;
+  padding: 20px;
+  opacity: 1;
+  transition: all 1s ease-in-out; }
+  @media (max-width: 767.98px) {
+    .soundcloud-player {
+      height: 200px;
+      width: 200px;
+      padding: 10px 0 0 0; } }
+  .soundcloud-player.player-hidden {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    transition: all 1s ease-in-out; }
+  .soundcloud-player iframe {
+    -webkit-box-shadow: 0px 2px 15px -1px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 2px 15px -1px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 2px 15px -1px rgba(0, 0, 0, 0.6); }
+
 .homepage {
   background-color: white; }
   .homepage .text-container {
     color: #859298;
     padding: 80px; }
+  .homepage .hero-buttons {
+    display: flex; }
+    .homepage .hero-buttons .text-button {
+      margin-right: 20px; }
 
 .App {
   text-align: center; }

@@ -1,0 +1,25 @@
+.text-button {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: $marker;
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+    @include media-breakpoint-down(sm) {
+        font-size: 0.7rem;
+    }
+    &:hover {
+        background-color: white;
+        color: $dark-jungle-green;
+        transition: all 0.5s ease-in-out;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &:focus {
+        outline: none;
+    }
+}
