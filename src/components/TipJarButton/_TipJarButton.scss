@@ -1,0 +1,38 @@
+.dtj-tip-button {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: $marker;
+    transition: all 0.5s ease-in-out;
+    
+    .hover {
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        margin-left: -25px; //must be the width of the icon set in the svg
+        z-index: 0;
+    }
+    .normal {
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+        z-index: 1;
+    }
+
+    &:hover {
+        background-color: white;
+        color: $dark-jungle-green;
+        transition: all 0.5s ease-in-out;
+        text-decoration: none;
+        .normal {
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+        }
+        .hover {
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}

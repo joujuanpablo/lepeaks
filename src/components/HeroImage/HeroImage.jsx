@@ -1,17 +1,23 @@
 import React from 'react';
 import textLogo from '../../images/text-logo.png';
 
-export default (props) => {
-    const style = {
-        background: "url("+props.imageUrl+")",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        backgroundPosition: "center",
-    };
+ class HeroImage extends React.Component {
 
-    return (
-        <div className="hero-image" style={style}>
-            <img src={textLogo} alt="Le Peaks Music logo" className="text-logo"/>
-        </div>
-    )
+    render() {
+        const style = {
+            background: "url("+this.props.imageUrl+")",
+            backgroundSize: "cover",
+            backgroundAttachment: "fixed",
+            backgroundPosition: "center",
+        };
+
+        return (
+            <div className="hero-image" style={style}>
+                <img src={textLogo} alt="Le Peaks Music logo" className="text-logo"/>
+                {this.props.children}
+            </div>
+        )
+    }
 }
+
+export default HeroImage;

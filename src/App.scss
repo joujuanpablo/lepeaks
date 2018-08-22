@@ -1,13 +1,14 @@
-@import 'styles/_custom-bootstrap.scss';
-@import 'styles/_colors.scss';
-@import 'styles/fonts.scss';
+@import 'styles/_custom-bootstrap';
+@import 'styles/_colors';
+@import 'styles/fonts';
 
 //components
-@import 'components/MainNav/_MainNav.scss';
-@import 'components/Header/_Header.scss';
-@import 'components/HeroImage/_HeroImage.scss';
+@import 'components/MainNav/_MainNav';
+@import 'components/Header/_Header';
+@import 'components/HeroImage/_HeroImage';
 @import 'components/Footer/_Footer';
 @import 'components/TextInput/_TextInput';
+@import 'components/TipJarButton/_TipJarButton';
 
 //Defaults
 .App {
