@@ -42,9 +42,9 @@ class Home extends React.Component {
                         </div>
                         <div className="col-12 col-md">
                             <div className="text-container">
-                                <p>Le Peaks is a project that began April 2018. A one man team on a mission to capture and share a noisy sea of memories through sound. With it I hope to lift you from the now, and from up there, above the chaos, show you all the little pieces stitched together.</p>
+                                <p>Le Peaks is a project that began April 2018. A one man team on a mission to capture and share a noisy sea of memories through sound. With it I hope to lift you from the now, and up there, above the chaos, show you all the little pieces stitched together.</p>
                                 <h5>Who am I, what is my story?</h5>
-                                <p>I'm a corporate web developer for the taxes and bills. I write music to find meaning. A free spirit, lone wolf, nomadic Colombian Canadian.</p>
+                                <p>A humble web developer in order to pay the taxes and the bills. I write music in to find meaning. A free spirit, lone wolf, nomadic Colombian Canadian.</p>
                                 <h5>Influences and topics</h5>
                                 <p>Echoes and gibberish swirling in my mind. Adulthood, the importance of family and friendship, insignificance, love, the passing of time, and the grey areas between right and wrong. Complex things connected together in a delicate and constantly evolving web.</p>
                                 <p>I draw inspiration from all sorts of music, from folk songs to church hymns to funk and pop. Electronic music has also lent itself very helpful in capturing my ideas by giving me infinite sounds possibilities all through the black and white keys I'm so familiar with. All these elements come together to form the music you hear.</p>
