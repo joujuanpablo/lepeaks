@@ -18,6 +18,25 @@ class Home extends React.Component {
         textButtonText: 'LISTEN',
     }
 
+    events = [
+        {
+            date: '01/02/2018', 
+            venue: 'Le Cafe', 
+            city: 'Toronto',
+            eventUrl: 'https://www.google.com', 
+            entryType: 'Free - Details'
+        },
+        {
+            date: '03/04/2018', 
+            venue: 'Le Pub', 
+            city: 'Toronto',
+            eventUrl: 'https://www.google.com', 
+            entryType: 'Free - Details'
+        }
+
+    ]
+
+
     componentDidMount() {
         this.showButtons();
     }
@@ -69,17 +88,17 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </div>
-                {/* <div className="upcoming-shows">
-                    {this.props.events.map((event) => (
+                <div className="upcoming-shows">
+                    {this.events.map((event) => (
                         <EventLink 
-                            date={'01/02/2018'} 
-                            venue={'Le Cafe'} 
-                            city={'Toronto'} 
-                            eventUrl={'https://www.google.com'} 
-                            entryType={'Free - Details'}/>
+                            date={event.date} 
+                            venue={event.venue} 
+                            city={event.city} 
+                            eventUrl={event.eventUrl} 
+                            entryType={event.entryType}/>
                     ))}
                     
-                </div> */}
+                </div>
             </div>
         )
     }
