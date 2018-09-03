@@ -1,11 +1,15 @@
 import React from 'react';
-import HeroImage from '../HeroImage/HeroImage';
-import Image from '../../images/Hero/andrew-charney.jpg';
-import TipJarButton from '../../components/TipJarButton/TipJarButton';
+import HomeCopy from './Home-copy.json';
 import textLogo from '../../images/text-logo.png';
+import Image from '../../images/Hero/andrew-charney.jpg';
 import UnderConstruction from '../../images/underConstruction.gif';
-import SoundCloudPlayer from '../../components/SoundCloudPlayer/SoundCloudPlayer';
-import TextButton from '../../components/TextButton/TextButton';
+
+//components
+import TipJarButton from '../TipJarButton/TipJarButton';
+import HeroImage from '../HeroImage/HeroImage';
+import SoundCloudPlayer from '../SoundCloudPlayer/SoundCloudPlayer';
+import TextButton from '../TextButton/TextButton';
+import EventLink from '../EventLink/EventLink';
 
 class Home extends React.Component {
 
@@ -14,11 +18,23 @@ class Home extends React.Component {
         textButtonText: 'LISTEN',
     }
 
+    componentDidMount() {
+        this.showButtons();
+    }
+    
+    showButtons = () => {
+        var buttons = document.querySelector(".hero-buttons");
+        
+        setTimeout(() => {
+            buttons.classList.add("buttons-showing")
+        }, 1000)
+    }
+
     handleShowPlayer = () => {
         this.state.playerShowing 
         ? this.setState({playerShowing: false, textButtonText: 'LISTEN'}) 
         : this.setState({playerShowing: true, textButtonText: 'HIDE PLAYER'})
-    }  
+    } 
 
     render() {
         return (
@@ -27,31 +43,43 @@ class Home extends React.Component {
                     <img src={textLogo} alt="Le Peaks Music logo" className="text-logo"/>
                     <div className="intro-text">- MUSIC-</div>
                     <div className="hero-buttons">
-                        <TextButton text={this.state.textButtonText} handleClick={this.handleShowPlayer} />
-                        <TipJarButton />
+                        <TextButton context={"hero-button"} text={this.state.textButtonText} handleClick={this.handleShowPlayer} />
+                        <TipJarButton context={"hero-button"}/>
                     </div>
                     <SoundCloudPlayer display={this.state.playerShowing ? '' : 'player-hidden'}/>
                 </HeroImage>
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-12 col-md">
-                        <div className="text-container">
-                            <img className="under-construction" src={UnderConstruction} alt="under construction"/>
+                <div className="about-row-wrapper container">
+                    <div className="row about-row">
+                        <div className="col-12 col-md about-column">
+                            <div className="image-container">
+                                {/* <img className="under-construction" src={UnderConstruction} alt="under construction"/> */}
+                            </div>
                         </div>
-                            
-                        </div>
-                        <div className="col-12 col-md">
+                        <div className="col-12 col-md about-column">
                             <div className="text-container">
-                                <p>Le Peaks is a project that began April 2018. A one man team on a mission to capture and share a noisy sea of memories through sound. With it I hope to lift you from the now, and up there, above the chaos, show you all the little pieces stitched together.</p>
-                                <h5>Who am I, what is my story?</h5>
-                                <p>A humble web developer in order to pay the taxes and the bills. I write music in to find meaning. A free spirit, lone wolf, nomadic Colombian Canadian.</p>
-                                <h5>Influences and topics</h5>
-                                <p>Echoes and gibberish swirling in my mind. Adulthood, the importance of family and friendship, insignificance, love, the passing of time, and the grey areas between right and wrong. Complex things connected together in a delicate and constantly evolving web.</p>
-                                <p>I draw inspiration from all sorts of music, from folk songs to church hymns to funk and pop. Electronic music has also lent itself very helpful in capturing my ideas by giving me infinite sounds possibilities all through the black and white keys I'm so familiar with. All these elements come together to form the music you hear.</p>
+                                <div className="top-border"></div>
+                                <h3>{HomeCopy.aboutRow.heading1}</h3>
+                                <p>{HomeCopy.aboutRow.body1}</p>
+                                <h3>{HomeCopy.aboutRow.heading2}</h3>
+                                <p>{HomeCopy.aboutRow.body2}</p>
+                                <h3>{HomeCopy.aboutRow.heading3}</h3>
+                                <p>{HomeCopy.aboutRow.body31}</p>
+                                <p>{HomeCopy.aboutRow.body32}</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                {/* <div className="upcoming-shows">
+                    {this.props.events.map((event) => (
+                        <EventLink 
+                            date={'01/02/2018'} 
+                            venue={'Le Cafe'} 
+                            city={'Toronto'} 
+                            eventUrl={'https://www.google.com'} 
+                            entryType={'Free - Details'}/>
+                    ))}
+                    
+                </div> */}
             </div>
         )
     }

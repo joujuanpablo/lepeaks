@@ -1,11 +1,58 @@
 .homepage {
     background-color: white;
-    .text-container {
-        color: $roman-silver;
-        padding: 80px;
+    .about-row {
+        -webkit-box-shadow: 0px -22px 36px -27px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px -22px 36px -27px rgba(0,0,0,0.75);
+        box-shadow: 0px -22px 36px -27px rgba(0,0,0,0.75);
+
+        .about-column {
+            padding: 8% 0;
+
+            .text-container {
+                font-family: $caveat;
+                color: $roman-silver;
+                text-align: justify;
+                height: 100%;
+                padding: 0 15%;
+                @include media-breakpoint-down(md) {
+                    padding: 0 8%;
+                }
+
+                .top-border {
+                    border-top: 1px solid $dark-jungle-green;
+                    padding-bottom: 20px;
+                }
+                h3 {
+                    text-align: end;
+                    font-family: $marker;
+                    font-size: 1.2rem;
+                    color: $dark-jungle-green-90
+                }
+            }
+            .image-container {
+                background-image: url('images/t-shirts.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+            }  
+        }
+
     }
+    .upcoming-shows {
+        background-color: $sunglow;
+        height: 300px;
+    }
+
     .hero-buttons {
         display: flex;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-in-out;
+        &.buttons-showing {
+            opacity: 1;
+            transform: translateY(0px);
+            transition: all 0.8s ease-in-out;
+        }
         .text-button {
             margin-right: 20px;
         }
