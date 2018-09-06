@@ -1,0 +1,15 @@
+.privacy-policy {
+    .privacy-terms-text {
+        margin-top: $header-height * 2;
+        margin-bottom: $header-height + 30px;
+        text-align: left;
+        h1,h3 {
+            font-family: $marker;
+            margin-bottom: 20px;
+        }
+        p,li {
+            font-family: $main-font;
+            font-size: 0.8rem;
+        }
+    }
+}

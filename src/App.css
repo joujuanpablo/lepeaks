@@ -245,6 +245,17 @@ footer {
   justify-content: space-evenly;
   padding: 20px; }
 
+.privacy-policy .privacy-terms-text {
+  margin-top: 160px;
+  margin-bottom: 110px;
+  text-align: left; }
+  .privacy-policy .privacy-terms-text h1, .privacy-policy .privacy-terms-text h3 {
+    font-family: "Permanent Marker", cursive;
+    margin-bottom: 20px; }
+  .privacy-policy .privacy-terms-text p, .privacy-policy .privacy-terms-text li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem; }
+
 .homepage {
   background-color: white; }
   .homepage .about-row .about-column {
@@ -298,28 +309,6 @@ footer {
 
 .App {
   text-align: center; }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
-
-.App-header {
-  background-color: #28a745;
-  height: 150px;
-  padding: 20px;
-  color: white; }
-
-.App-title {
-  font-size: 1.5em; }
-
-.App-intro {
-  font-size: large; }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
 
 .under-construction {
   padding: 50px; }

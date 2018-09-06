@@ -1,6 +1,7 @@
 @import 'styles/_custom-bootstrap';
 @import 'styles/_colors';
 @import 'styles/fonts';
+@import 'styles/variables';
 
 //components
 @import 'components/MainNav/_MainNav';
@@ -12,37 +13,13 @@
 @import 'components/TextButton/_TextButton';
 @import 'components/SoundCloudPlayer/_SoundCloudPlayer';
 @import 'components/EventLink/_EventLink';
+@import 'components/PrivacyPolicy/_PrivacyPolicy';
 //Views
 @import 'components/Home/_Home';
 
 //Defaults
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: $green;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
 
 .under-construction {
