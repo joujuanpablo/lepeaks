@@ -61,7 +61,7 @@
     .hero-image {
       height: 500px !important; } }
   .hero-image .intro-text {
-    font-family: "Amatic SC", cursive;
+    font-family: "Amatic SC", cursive, "Arial body";
     font-size: 1.5rem;
     margin-top: 20px; }
     @media (max-width: 767.98px) {
@@ -103,7 +103,7 @@ footer {
       flex-direction: column;
       align-items: flex-start;
       color: white;
-      font-family: "Permanent Marker", cursive;
+      font-family: "Permanent Marker", cursive, "Arial Header";
       font-size: 0.9rem; }
   footer .image {
     background-image: url("images/Hero/brandon-mattingly.jpg");
@@ -168,7 +168,7 @@ footer {
   border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Permanent Marker", cursive, "Arial Header";
   transition: all 0.5s ease-in-out; }
   @media (max-width: 767.98px) {
     .dtj-tip-button {
@@ -202,7 +202,7 @@ footer {
   border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Permanent Marker", cursive, "Arial Header";
   transition: all 0.5s ease-in-out;
   background-color: transparent; }
   @media (max-width: 767.98px) {
@@ -250,7 +250,7 @@ footer {
   margin-bottom: 110px;
   text-align: left; }
   .privacy-policy .privacy-terms-text h1, .privacy-policy .privacy-terms-text h3 {
-    font-family: "Permanent Marker", cursive;
+    font-family: "Permanent Marker", cursive, "Arial Header";
     margin-bottom: 20px; }
   .privacy-policy .privacy-terms-text p, .privacy-policy .privacy-terms-text li {
     font-family: "Open Sans", sans-serif;
@@ -261,7 +261,7 @@ footer {
   .homepage .about-row .about-column {
     padding: 8% 0; }
     .homepage .about-row .about-column .text-container {
-      font-family: "Caveat", cursive;
+      font-family: "Caveat", cursive, "Arial body";
       color: #859298;
       text-align: justify;
       height: 100%;
@@ -274,7 +274,7 @@ footer {
         padding-bottom: 20px; }
       .homepage .about-row .about-column .text-container h3 {
         text-align: end;
-        font-family: "Permanent Marker", cursive;
+        font-family: "Permanent Marker", cursive, "Arial Header";
         font-size: 1.2rem;
         color: rgba(14, 32, 36, 0.9); }
     .homepage .about-row .about-column .image-container {
