@@ -247,37 +247,43 @@ footer {
 
 .homepage {
   background-color: white; }
-  .homepage .about-row {
+  .homepage .about-row .about-column {
+    padding: 8% 0; }
+    .homepage .about-row .about-column .text-container {
+      font-family: "Caveat", cursive;
+      color: #859298;
+      text-align: justify;
+      height: 100%;
+      padding: 0 15%; }
+      @media (max-width: 991.98px) {
+        .homepage .about-row .about-column .text-container {
+          padding: 0 8%; } }
+      .homepage .about-row .about-column .text-container .top-border {
+        border-top: 1px solid #0E2024;
+        padding-bottom: 20px; }
+      .homepage .about-row .about-column .text-container h3 {
+        text-align: end;
+        font-family: "Permanent Marker", cursive;
+        font-size: 1.2rem;
+        color: rgba(14, 32, 36, 0.9); }
+    .homepage .about-row .about-column .image-container {
+      background-image: url("images/t-shirts.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100%; }
+  .homepage .upcoming-shows {
+    height: 300px;
     -webkit-box-shadow: 0px -22px 36px -27px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px -22px 36px -27px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px -22px 36px -27px rgba(0, 0, 0, 0.75); }
-    .homepage .about-row .about-column {
-      padding: 8% 0; }
-      .homepage .about-row .about-column .text-container {
-        font-family: "Caveat", cursive;
-        color: #859298;
-        text-align: justify;
+    box-shadow: 0px -22px 36px -27px rgba(0, 0, 0, 0.75);
+    background-color: #0E2024;
+    color: white;
+    padding: 60px 0; }
+    .homepage .upcoming-shows .events-wrapper {
+      height: 100%; }
+      .homepage .upcoming-shows .events-wrapper .events-scrollbox {
         height: 100%;
-        padding: 0 15%; }
-        @media (max-width: 991.98px) {
-          .homepage .about-row .about-column .text-container {
-            padding: 0 8%; } }
-        .homepage .about-row .about-column .text-container .top-border {
-          border-top: 1px solid #0E2024;
-          padding-bottom: 20px; }
-        .homepage .about-row .about-column .text-container h3 {
-          text-align: end;
-          font-family: "Permanent Marker", cursive;
-          font-size: 1.2rem;
-          color: rgba(14, 32, 36, 0.9); }
-      .homepage .about-row .about-column .image-container {
-        background-image: url("images/t-shirts.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 100%; }
-  .homepage .upcoming-shows {
-    background-color: #FFC327;
-    height: 300px; }
+        overflow: scroll; }
   .homepage .hero-buttons {
     display: flex;
     opacity: 0;

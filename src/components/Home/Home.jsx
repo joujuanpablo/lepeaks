@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeCopy from './Home-copy.json';
+import events from './Events-list.json';
 import textLogo from '../../images/text-logo.png';
 import Image from '../../images/Hero/andrew-charney.jpg';
 import UnderConstruction from '../../images/underConstruction.gif';
@@ -17,25 +18,6 @@ class Home extends React.Component {
         playerShowing: false,
         textButtonText: 'LISTEN',
     }
-
-    events = [
-        {
-            date: '01/02/2018', 
-            venue: 'Le Cafe', 
-            city: 'Toronto',
-            eventUrl: 'https://www.google.com', 
-            entryType: 'Free - Details'
-        },
-        {
-            date: '03/04/2018', 
-            venue: 'Le Pub', 
-            city: 'Toronto',
-            eventUrl: 'https://www.google.com', 
-            entryType: 'Free - Details'
-        }
-
-    ]
-
 
     componentDidMount() {
         this.showButtons();
@@ -58,7 +40,7 @@ class Home extends React.Component {
     render() {
         return (
             <div className="homepage">
-                <HeroImage imageUrl={Image} heroHeight="600px">
+                <HeroImage imageUrl={Image} heroHeight="100vh">
                     <img src={textLogo} alt="Le Peaks Music logo" className="text-logo"/>
                     <div className="intro-text">- MUSIC-</div>
                     <div className="hero-buttons">
@@ -67,6 +49,24 @@ class Home extends React.Component {
                     </div>
                     <SoundCloudPlayer display={this.state.playerShowing ? '' : 'player-hidden'}/>
                 </HeroImage>
+                <div className="upcoming-shows">
+                    <div className="events-wrapper">
+                        <div className="events-scrollbox">
+                                {events.map((event) => (
+                                    //add logic to only show upcoming events
+                                    <EventLink 
+                                        date={event.date} 
+                                        venue={event.venue} 
+                                        city={event.city} 
+                                        eventUrl={event.eventUrl}
+                                        tickets={event.tickets}
+                                        image={event.image}
+                                        locationUrl={event.locationUrl}
+                                    />
+                                ))}
+                        </div>
+                    </div>
+                </div>
                 <div className="about-row-wrapper container">
                     <div className="row about-row">
                         <div className="col-12 col-md about-column">
@@ -87,17 +87,6 @@ class Home extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="upcoming-shows">
-                    {this.events.map((event) => (
-                        <EventLink 
-                            date={event.date} 
-                            venue={event.venue} 
-                            city={event.city} 
-                            eventUrl={event.eventUrl} 
-                            entryType={event.entryType}/>
-                    ))}
-                    
                 </div>
             </div>
         )
