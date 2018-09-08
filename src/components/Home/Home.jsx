@@ -60,7 +60,7 @@ class Home extends React.Component {
                                         city={event.city} 
                                         eventUrl={event.eventUrl}
                                         tickets={event.tickets}
-                                        image={event.image}
+                                        imageUrl={event.image}
                                         locationUrl={event.locationUrl}
                                     />
                                 ))}

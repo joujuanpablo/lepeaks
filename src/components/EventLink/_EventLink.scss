@@ -1,7 +1,33 @@
 .event-summary {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
+    justify-content: center;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        height: 200px;
+        width: 100%;
+
+        .event-image {
+            height: 100%;
+            width: 180px;
+        }
+        .date {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $sunglow;
+            height: 100%;
+            font-size: 2rem;
+            width: 200px;
+            word-wrap: break-word;
+            padding: 20px;
+            font-family: $marker;
+        }
+
+    }
+
 }

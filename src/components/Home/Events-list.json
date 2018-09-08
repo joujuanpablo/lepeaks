@@ -1,24 +1,36 @@
 [
     {
-        "date": "01/02/2018", 
+        "date": {
+            "day": "01",
+            "month": "Feb",
+            "year": "18"
+            }, 
         "venue": "Le Cafe", 
         "city": "Toronto",
         "eventUrl": "https://www.google.com", 
         "tickets": "https://www.google.com",
-        "image": "",
+        "image": "test-throne.jpg",
         "locationUrl": "https://www.google.com"
     },
     {
-        "date": "03/04/2018", 
+        "date": {
+            "day": "01",
+            "month": "Feb",
+            "year": "18"
+        },
         "venue": "Le Pub", 
         "city": "Toronto",
         "eventUrl": "https://www.google.com", 
         "tickets": "https://www.google.com",
-        "image": "",
+        "image": "test-throne.jpg",
         "locationUrl": "https://www.google.com"
     },
     {
-        "date": "05/06/2018", 
+        "date": {
+            "day": "01",
+            "month": "Feb",
+            "year": "18"
+        }, 
         "venue": "Le Castle", 
         "city": "Edinburgh",
         "eventUrl": "https://www.google.com", 
@@ -27,7 +39,11 @@
         "locationUrl": "https://www.google.com"
     },
     {
-        "date": "07/08/2018", 
+        "date": {
+            "day": "01",
+            "month": "Feb",
+            "year": "18"
+            }, 
         "venue": "Le Pub", 
         "city": "Toronto",
         "eventUrl": "https://www.google.com", 
@@ -36,7 +52,11 @@
         "locationUrl": "https://www.google.com"
     },
     {
-        "date": "05/06/2018", 
+        "date": {
+            "day": "01",
+            "month": "Feb",
+            "year": "18"
+            }, 
         "venue": "Le Castle", 
         "city": "Edinburgh",
         "eventUrl": "https://www.google.com", 
@@ -45,7 +65,11 @@
         "locationUrl": "https://www.google.com"
     },
     {
-        "date": "07/08/2018", 
+        "date": {
+            "day": "01",
+            "month": "Feb",
+            "year": "18"
+            }, 
         "venue": "Le Pub", 
         "city": "Toronto",
         "eventUrl": "https://www.google.com", 
