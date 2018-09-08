@@ -50,6 +50,10 @@
             h1 {
                 font-family: $marker;
                 padding-bottom: 40px;
+
+                @include media-breakpoint-down(sm){
+                    font-size: 1.7rem;
+                }
             }
             .events-scrollbox {
                 height: 70%;

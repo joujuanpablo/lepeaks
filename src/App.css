@@ -248,82 +248,115 @@ footer {
     align-items: center;
     height: 180px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); }
-    .event-summary .wrapper .event-image {
-      height: 100%;
-      width: 180px; }
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative; }
+    @media (max-width: 767.98px) {
+      .event-summary .wrapper {
+        height: 200px; } }
     .event-summary .wrapper .date {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       background-color: #FFC327;
       height: 100%;
       font-size: 2rem;
-      width: 120px;
-      word-wrap: break-word;
-      padding: 20px;
-      font-family: "Permanent Marker", cursive, "Arial Header"; }
-    .event-summary .wrapper .details-box {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      height: 100%;
-      padding: 20px 40px; }
-      .event-summary .wrapper .details-box .venue {
-        color: #FFC327;
-        font-size: 2rem;
-        font-family: "Amatic SC", cursive, "Arial body";
-        transition: all 0.5s ease-in-out; }
-        .event-summary .wrapper .details-box .venue:hover {
-          color: white;
-          text-decoration: none;
-          transition: all 0.5s ease-in-out; }
-      .event-summary .wrapper .details-box .time {
-        font-size: 1.5rem;
-        font-family: "Amatic SC", cursive, "Arial body";
-        color: #CD224C; }
-      .event-summary .wrapper .details-box .blurb {
-        text-align: left;
-        font-size: 0.8rem; }
-    .event-summary .wrapper .buttons-box {
+      font-family: "Permanent Marker", cursive, "Arial Header";
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100%;
-      width: 150px; }
-      .event-summary .wrapper .buttons-box .details {
-        height: 50px;
-        width: 150px;
-        background-color: transparent;
-        margin-bottom: 20px;
-        border: 2px solid #FFC327;
-        color: #FFC327;
-        transition: all 0.5s ease-in-out; }
-        .event-summary .wrapper .buttons-box .details:hover {
-          background-color: #FFC327;
-          color: white;
-          transition: all 0.5s ease-in-out; }
-      .event-summary .wrapper .buttons-box .tickets {
-        height: 50px;
-        width: 150px;
-        border: 2px solid white;
-        background-color: transparent;
-        color: white;
-        transition: all 0.5s ease-in-out; }
-        .event-summary .wrapper .buttons-box .tickets:hover {
-          background-color: white;
-          color: black;
-          transition: all 0.5s ease-in-out; }
-      .event-summary .wrapper .buttons-box .button {
+      justify-content: center; }
+      @media (max-width: 767.98px) {
+        .event-summary .wrapper .date {
+          font-size: 1.5rem; } }
+    .event-summary .wrapper .info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 100%; }
+      .event-summary .wrapper .info .row {
+        display: flex;
+        align-items: center;
+        width: 100%; }
+        .event-summary .wrapper .info .row .details-box {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          height: 100%; }
+          @media (max-width: 767.98px) {
+            .event-summary .wrapper .info .row .details-box {
+              padding-bottom: 15px; } }
+          .event-summary .wrapper .info .row .details-box .venue {
+            color: #FFC327;
+            font-size: 2rem;
+            font-family: "Amatic SC", cursive, "Arial body";
+            transition: all 0.5s ease-in-out; }
+            @media (max-width: 767.98px) {
+              .event-summary .wrapper .info .row .details-box .venue {
+                font-size: 1.5rem; } }
+            .event-summary .wrapper .info .row .details-box .venue:hover {
+              color: white;
+              text-decoration: none;
+              transition: all 0.5s ease-in-out; }
+          .event-summary .wrapper .info .row .details-box .time {
+            font-size: 1.5rem;
+            font-family: "Amatic SC", cursive, "Arial body";
+            color: #CD224C; }
+            @media (max-width: 767.98px) {
+              .event-summary .wrapper .info .row .details-box .time {
+                font-size: 1rem; } }
+          .event-summary .wrapper .info .row .details-box .blurb {
+            text-align: left;
+            font-size: 0.8rem; }
+            @media (max-width: 767.98px) {
+              .event-summary .wrapper .info .row .details-box .blurb {
+                font-size: 0.5rem; } }
+      .event-summary .wrapper .info .buttons-box {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-family: "Permanent Marker", cursive, "Arial Header"; }
-        .event-summary .wrapper .buttons-box .button:hover {
-          text-decoration: none; }
+        height: 100%; }
+        @media (max-width: 767.98px) {
+          .event-summary .wrapper .info .buttons-box {
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start; } }
+        .event-summary .wrapper .info .buttons-box .details {
+          background-color: transparent;
+          margin-bottom: 20px;
+          border: 2px solid #FFC327;
+          color: #FFC327;
+          transition: all 0.5s ease-in-out; }
+          @media (max-width: 767.98px) {
+            .event-summary .wrapper .info .buttons-box .details {
+              margin-bottom: 0;
+              margin-right: 15px; } }
+          .event-summary .wrapper .info .buttons-box .details:hover {
+            background-color: #FFC327;
+            color: white;
+            transition: all 0.5s ease-in-out; }
+        .event-summary .wrapper .info .buttons-box .tickets {
+          height: 50px;
+          width: 150px;
+          border: 2px solid white;
+          background-color: transparent;
+          color: white;
+          transition: all 0.5s ease-in-out; }
+          .event-summary .wrapper .info .buttons-box .tickets:hover {
+            background-color: white;
+            color: black;
+            transition: all 0.5s ease-in-out; }
+        .event-summary .wrapper .info .buttons-box .button {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-family: "Permanent Marker", cursive, "Arial Header";
+          height: 50px;
+          width: 150px; }
+          .event-summary .wrapper .info .buttons-box .button:hover {
+            text-decoration: none; }
+          @media (max-width: 767.98px) {
+            .event-summary .wrapper .info .buttons-box .button {
+              height: 40px;
+              width: 100px; } }
 
 .privacy-policy .privacy-terms-text {
   margin-top: 160px;
@@ -375,6 +408,9 @@ footer {
       .homepage .upcoming-shows .events-wrapper h1 {
         font-family: "Permanent Marker", cursive, "Arial Header";
         padding-bottom: 40px; }
+        @media (max-width: 767.98px) {
+          .homepage .upcoming-shows .events-wrapper h1 {
+            font-size: 1.7rem; } }
       .homepage .upcoming-shows .events-wrapper .events-scrollbox {
         height: 70%;
         overflow: scroll; }
