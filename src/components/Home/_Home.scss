@@ -46,8 +46,13 @@
 
         .events-wrapper {
             height:100%; 
+
+            h1 {
+                font-family: $marker;
+                padding-bottom: 40px;
+            }
             .events-scrollbox {
-                height: 100%;
+                height: 70%;
                 overflow: scroll;
 
             }

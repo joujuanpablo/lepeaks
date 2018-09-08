@@ -51,16 +51,17 @@ class Home extends React.Component {
                 </HeroImage>
                 <div className="upcoming-shows">
                     <div className="events-wrapper">
-                        <div className="events-scrollbox">
+                        <h1>Upcoming Events</h1>
+                        <div className="events-scrollbox container">
                                 {events.map((event) => (
                                     //add logic to only show upcoming events
                                     <EventLink 
                                         date={event.date} 
                                         venue={event.venue} 
-                                        city={event.city} 
+                                        city={event.city}
+                                        blurb={event.blurb} 
                                         eventUrl={event.eventUrl}
                                         tickets={event.tickets}
-                                        imageUrl={event.image}
                                         locationUrl={event.locationUrl}
                                     />
                                 ))}
