@@ -50,7 +50,7 @@ class Home extends React.Component {
                     <SoundCloudPlayer display={this.state.playerShowing ? '' : 'player-hidden'}/>
                 </HeroImage>
                 <div className="upcoming-shows">
-                    <div className="events-wrapper">
+                    <div className="events-wrapper container">
                         <h1>Upcoming Events</h1>
                         <div className="events-scrollbox container">
                                 {events.map((event) => (

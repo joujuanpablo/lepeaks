@@ -7,7 +7,7 @@
     width: 100%;
     height: $header-height;
     transition: all 0.3s ease-in-out;
-    z-index: 2;
+    z-index: 3;
 
     &.scrolled {
         background-color: $dark-jungle-green;
