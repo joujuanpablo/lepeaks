@@ -20,8 +20,8 @@ export default (props) => {
                     <div className="mobile info-item">
                         <FontAwesomeIcon icon={'mobile'} size="lg" />
                         <p>
-                            Or text +44 (0) 7825 015955
-                            </p>
+                            +44 (0) 7825 015955
+                        </p>
                     </div>
                     <div className="facebook info-item">
                         <FontAwesomeIcon icon={['fab', 'facebook-square']} size="lg" />
