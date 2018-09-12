@@ -38,7 +38,10 @@
   width: 100%;
   height: 80px;
   transition: all 0.3s ease-in-out;
-  z-index: 3; }
+  z-index: 3;
+  top: 0; }
+  .App-header.header.solid {
+    background-color: #0E2024; }
   .App-header.header.scrolled {
     background-color: #0E2024;
     transition: all 0.3s ease-in-out;
@@ -86,6 +89,7 @@ footer {
       flex-direction: column;
       align-items: flex-start;
       color: #FFC327;
+      padding-top: 8px;
       padding-bottom: 20px; }
       footer .solid .admin-links a {
         color: #FFC327;
@@ -95,9 +99,6 @@ footer {
         color: #ffe29a;
         text-decoration: none;
         transition: color 0.8s ease-in-out; }
-      footer .solid .admin-links .copyright {
-        font-size: 0.6rem;
-        margin-top: 10px; }
     footer .solid .newsletter {
       display: flex;
       flex-direction: column;
@@ -105,6 +106,9 @@ footer {
       color: white;
       font-family: "Permanent Marker", cursive, "Arial Header";
       font-size: 0.9rem; }
+      footer .solid .newsletter .copyright {
+        color: #FFC327;
+        align-self: flex-end; }
   footer .image {
     background-image: url("images/Hero/brandon-mattingly.jpg");
     background-size: cover;
@@ -439,6 +443,63 @@ footer {
       transition: all 0.8s ease-in-out; }
     .homepage .hero-buttons .text-button {
       margin-right: 20px; }
+
+.contact-page .wrapper {
+  background-image: url("images/neon-peaks.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 60px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: 120px;
+  -webkit-box-shadow: -1px 14px 24px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 14px 24px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 14px 24px -2px rgba(0, 0, 0, 0.75); }
+  @media (min-width: 992px) {
+    .contact-page .wrapper {
+      width: 50%; } }
+  .contact-page .wrapper .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 100%;
+    width: 100%; }
+    .contact-page .wrapper .contact-details h1 {
+      margin-bottom: 30px;
+      font-family: "Permanent Marker", cursive, "Arial Header";
+      font-size: 4rem; }
+      @media (max-width: 767.98px) {
+        .contact-page .wrapper .contact-details h1 {
+          font-size: 3rem; } }
+    .contact-page .wrapper .contact-details .info-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      width: 80%; }
+      .contact-page .wrapper .contact-details .info-item svg {
+        flex: 1; }
+      .contact-page .wrapper .contact-details .info-item p {
+        margin-bottom: 0;
+        padding-left: 10px;
+        flex: 5;
+        text-align: left; }
+        @media (max-width: 767.98px) {
+          .contact-page .wrapper .contact-details .info-item p {
+            font-size: 0.8rem; } }
+      .contact-page .wrapper .contact-details .info-item a {
+        color: #FFC327;
+        padding-bottom: 10px;
+        transition: color 0.8s ease-in-out; }
+      .contact-page .wrapper .contact-details .info-item a:hover {
+        color: #ffe29a;
+        text-decoration: none;
+        transition: color 0.8s ease-in-out; }
 
 .App {
   text-align: center; }

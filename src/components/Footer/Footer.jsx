@@ -40,6 +40,27 @@ class Footer extends React.Component {
     render() {
         return(
             <footer>
+                <div className="solid"> 
+                    <div className="container">
+                        <div className="row">
+                            <div className="admin-links col-12 col-md-6">
+                                <Link to={'/terms-conditions'}>Terms & Conditions</Link>
+                                <Link to={'/privacy-policy'}>Privacy Policy</Link>
+                                <Link to={'/contact'}>Contact</Link>
+                                <a href="http://whymusicmatters.com/whymusicmatters.com/index.html">Why Music Matters</a>
+                            </div>  
+                            <div className="newsletter col-12 col-md-6">
+                                <div>
+                                    Sign up for our newsletter
+                                </div>
+                                <TextInput icon={'envelope'}/>
+                                <p className="copyright">
+                                    © 2018 Le Peaks Music
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="image">
                     <div className="social-links container">
                         <Link className="social-link" to={'https://www.instagram.com/lepeaksmusic/'}>
@@ -57,26 +78,6 @@ class Footer extends React.Component {
                         <Link className="social-link" to={''}>
                             <FontAwesomeIcon icon={['fab', 'spotify']} size="2x" />
                         </Link>                  
-                    </div>
-                </div>
-                <div className="solid"> 
-                    <div className="container">
-                        <div className="row">
-                            <div className="admin-links col-12 col-md-6">
-                                <Link to={'/terms-conditions'}>Terms & Conditions</Link>
-                                <Link to={'/privacy-policy'}>Privacy Policy</Link>
-                                <Link to={'/contact'}>Contact</Link>
-                                <p className="copyright">
-                                    © 2018 Le Peaks Music
-                                </p>
-                            </div>  
-                            <div className="newsletter col-12 col-md-6">
-                                <div>
-                                    Sign up for our newsletter
-                                </div>
-                                <TextInput icon={'envelope'}/>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </footer>

@@ -8,6 +8,11 @@
     height: $header-height;
     transition: all 0.3s ease-in-out;
     z-index: 3;
+    top: 0;
+
+    &.solid {
+        background-color: $dark-jungle-green;
+    }
 
     &.scrolled {
         background-color: $dark-jungle-green;

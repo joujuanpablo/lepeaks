@@ -3,10 +3,10 @@ import MainNav from '../MainNav/MainNav';
 
 export default (props) => {
 
-    const { logo } = props;
+    const { logo, solid } = props;
 
     return (
-        <header className="App-header header">
+        <header className={`App-header header ${solid}`} >
           <MainNav logo={logo}/>
         </header>
     )

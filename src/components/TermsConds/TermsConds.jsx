@@ -2,10 +2,13 @@ import React from 'react';
 import UnderConstruction from '../../images/underConstruction.gif';
 import HeroImage from '../HeroImage/HeroImage';
 import Image from '../../images/Hero/pine-watt.jpg';
+import Header from '../Header/Header';
+import logo from '../../images/logo-white.png';
 
 export default () => {
     return (
         <div className="privacy-policy">
+            <Header logo={logo} solid="solid" />
             <HeroImage imageUrl={Image} heroHeight="auto">
             <div className="privacy-terms-text container">
                 <h1>Terms and Conditions</h1>

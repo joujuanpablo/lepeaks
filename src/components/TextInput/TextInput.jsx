@@ -15,7 +15,7 @@ class TextInput extends React.Component {
     }
   
     handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.value);
+      alert('Sorry, this feature is still in progress! ' + this.state.value);
       event.preventDefault();
     }
   

@@ -4,6 +4,7 @@ import events from './Events-list.json';
 import textLogo from '../../images/text-logo.png';
 import Image from '../../images/Hero/andrew-charney.jpg';
 import UnderConstruction from '../../images/underConstruction.gif';
+import logo from '../../images/logo-white.png';
 
 //components
 import TipJarButton from '../TipJarButton/TipJarButton';
@@ -11,6 +12,7 @@ import HeroImage from '../HeroImage/HeroImage';
 import SoundCloudPlayer from '../SoundCloudPlayer/SoundCloudPlayer';
 import TextButton from '../TextButton/TextButton';
 import EventLink from '../EventLink/EventLink';
+import Header from '../Header/Header';
 
 class Home extends React.Component {
 
@@ -40,6 +42,7 @@ class Home extends React.Component {
     render() {
         return (
             <div className="homepage">
+                <Header logo={logo} />
                 <HeroImage imageUrl={Image} heroHeight="100vh">
                     <img src={textLogo} alt="Le Peaks Music logo" className="text-logo"/>
                     <div className="intro-text">- MUSIC-</div>

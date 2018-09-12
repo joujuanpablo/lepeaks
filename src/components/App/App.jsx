@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../../images/logo-white.png';
 import '../../App.css';
 import { Switch, Route } from 'react-router-dom';
-import Header from '../Header/Header';
 import Contact from '../Contact/Contact';
 import Events from '../Events/Events';
 import Gallery from '../Gallery/Gallery';
@@ -14,15 +12,15 @@ import PrivacyPolicy from '../PrivacyPolicy/PrivacyPolicy';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faMobile } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faEnvelope); //font awesome brands
+library.add(fab, faEnvelope, faMobile); //font awesome brands
 
 class App extends Component {
  
   render() {
     return (
       <div className="App">
-        <Header logo={logo} />
         <Switch>
           <Route component={Contact} exact path='/contact'/>
           <Route component={Events} exact path='/events'/>
