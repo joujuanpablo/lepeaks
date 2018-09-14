@@ -6,8 +6,8 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
  } from 'reactstrap';
+ import { Link } from 'react-router-dom';
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class MainNav extends React.Component {
@@ -58,41 +58,41 @@ class MainNav extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/gallery">Gallery</NavLink>
+                <Link to={"/gallery"}>Gallery</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/story">Story</NavLink>
+                <Link to={"/story"}>Story</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/events">Events</NavLink>
+                <Link to={"/events"}>Events</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/contact">Contact</NavLink>
+                <Link to={"/contact"}>Contact</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="https://www.instagram.com/lepeaksmusic/">
+                <Link to={"https://www.instagram.com/lepeaksmusic/"}>
                 <FontAwesomeIcon icon={['fab', 'instagram']} size="lg"/>
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="https://www.facebook.com/lepeaks">
+                <Link to={"https://www.facebook.com/lepeaks"}>
                   <FontAwesomeIcon icon={['fab', 'facebook-square']} size="lg"/>
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="https://www.youtube.com/channel/UC4gja3SBSN83BRz750O7ryw">
+                <Link to={"https://www.youtube.com/channel/UC4gja3SBSN83BRz750O7ryw"}>
                 <FontAwesomeIcon icon={['fab', 'youtube']} size="lg"/>
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="https://soundcloud.com/user-953480858">
+                <Link to={"https://soundcloud.com/user-953480858"}>
                   <FontAwesomeIcon icon={['fab', 'soundcloud']} size="lg" />
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="">
+                <Link to={""}>
                   <FontAwesomeIcon icon={['fab', 'spotify']} size="lg" />
-                </NavLink>
+                </Link>
               </NavItem>
             </Nav>
           </Collapse>

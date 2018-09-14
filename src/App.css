@@ -20,14 +20,25 @@
       .main-nav--wrapper .main-nav .navbar-collapse {
         margin-top: 20px;
         background-color: rgba(14, 32, 36, 0.9); } }
-    .main-nav--wrapper .main-nav a.nav-link {
-      color: white;
-      opacity: 0.8;
-      transition: opacity 0.8s ease-in-out; }
-    .main-nav--wrapper .main-nav a.nav-link:hover {
-      color: white;
-      opacity: 1;
-      transition: opacity 0.8s ease-in-out; }
+    .main-nav--wrapper .main-nav ul {
+      padding: 10px 0; }
+      @media (min-width: 768px) {
+        .main-nav--wrapper .main-nav ul {
+          padding: 0; } }
+      .main-nav--wrapper .main-nav ul li {
+        padding: 10px 0; }
+        @media (min-width: 768px) {
+          .main-nav--wrapper .main-nav ul li {
+            padding: 0 10px; } }
+        .main-nav--wrapper .main-nav ul li a {
+          color: white;
+          opacity: 0.8;
+          transition: opacity 0.8s ease-in-out; }
+        .main-nav--wrapper .main-nav ul li a:hover {
+          color: white;
+          opacity: 1;
+          transition: opacity 0.5s ease-in-out;
+          text-decoration: none; }
 
 .App-header.header {
   font-family: "Open Sans", sans-serif;
