@@ -44,7 +44,7 @@ class Home extends React.Component {
         return (
             <div className="homepage">
                 <Header logo={logo} />
-                <HeroImage imageUrl={Image} loaderImage={LoaderImage} heroHeight="100vh">
+                <HeroImage imageUrl={Image} loaderImageUrl={LoaderImage} heroHeight="100vh">
                     <img src={textLogo} alt="Le Peaks Music logo" className="text-logo"/>
                     <div className="intro-text">- MUSIC-</div>
                     <div className="hero-buttons">
