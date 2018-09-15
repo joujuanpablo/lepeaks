@@ -4,7 +4,7 @@ import React from 'react';
 
     render() {
         const style = {
-            background: "url("+this.props.imageUrl+")",
+            background: "url("+this.props.imageUrl+"), url("+this.props.loaderimageUrl+")",
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
             backgroundPosition: "center",

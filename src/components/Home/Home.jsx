@@ -3,6 +3,7 @@ import HomeCopy from './Home-copy.json';
 import events from './Events-list.json';
 import textLogo from '../../images/text-logo.png';
 import Image from '../../images/Hero/andrew-charney.jpg';
+import LoaderImage from '../../images/Hero/andrew-charney-loader.jpg';
 import UnderConstruction from '../../images/underConstruction.gif';
 import logo from '../../images/logo-white.png';
 
@@ -43,7 +44,7 @@ class Home extends React.Component {
         return (
             <div className="homepage">
                 <Header logo={logo} />
-                <HeroImage imageUrl={Image} heroHeight="100vh">
+                <HeroImage imageUrl={Image} loaderImage={LoaderImage} heroHeight="100vh">
                     <img src={textLogo} alt="Le Peaks Music logo" className="text-logo"/>
                     <div className="intro-text">- MUSIC-</div>
                     <div className="hero-buttons">

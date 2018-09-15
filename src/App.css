@@ -456,7 +456,7 @@ footer {
       margin-right: 20px; }
 
 .contact-page .wrapper {
-  background-image: url("images/neon-peaks.jpg");
+  background-image: url("images/neon-peaks.jpg"), url("images/neon-peaks-loader.jpg");
   background-size: cover;
   background-position: center;
   margin-bottom: 60px;
