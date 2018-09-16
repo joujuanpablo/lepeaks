@@ -1,5 +1,4 @@
 import React from 'react';
-import UnderConstruction from '../../images/underConstruction.gif';
 import Header from '../Header/Header';
 import logo from '../../images/logo-white.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -1,5 +1,4 @@
 import React from 'react';
-import UnderConstruction from '../../images/underConstruction.gif';
 import HeroImage from '../HeroImage/HeroImage';
 import Image from '../../images/Hero/tropical-dark.jpg';
 import Header from '../Header/Header';

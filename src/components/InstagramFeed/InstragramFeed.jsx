@@ -1,23 +1,32 @@
 import React from 'react';
-import Instafeed from 'react-instafeed';
 
 class InstagramFeed extends React.Component {
+
+    state = {
+      posts: []
+    }
+    
+    componentDidMount() {
+      fetch(`https://api.instagram.com/v1/users/self/media/recent/?access_token=8075650877.6381c0f.8dc579a30bec4416b007042887dc8fe4`)
+      .then(res => res.json())
+      .catch(err => console.log('getInstaPhotos Error', err))
+      .then((result) => {
+        console.log(result.data)
+        this.setState({posts:result.data})
+      })
+
+    }
+  
     render(){
-        const instafeedTarget = 'instafeed';
 
         return (
-          <div id={instafeedTarget}>
-            <Instafeed
-              limit='10'
-              ref='instafeed'
-              resolution='standard_resolution'
-              sortBy='most-recent'
-              target={instafeedTarget}
-              template=''
-              userId='lepeaksmusic'
-              clientId='6381c0f73607442ebd1fb79aa02ad38d'
-              accessToken='facc3170cd3a487e900d128b104968a2'
-            />
+          <div className="instagram-feed">
+            {this.state.posts.map((post, index) => 
+              <div className="post" id={post.id}>
+                <img src={post.images.low_resolution.url} alt=""/>
+                <div className="comment">{index}</div>
+              </div>
+            )}
           </div>
         )
     }

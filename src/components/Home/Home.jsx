@@ -4,7 +4,6 @@ import events from './Events-list.json';
 import textLogo from '../../images/text-logo.png';
 import Image from '../../images/Hero/andrew-charney.jpg';
 import LoaderImage from '../../images/Hero/andrew-charney-loader.jpg';
-import UnderConstruction from '../../images/underConstruction.gif';
 import logo from '../../images/logo-white.png';
 
 //components
@@ -67,6 +66,7 @@ class Home extends React.Component {
                                         eventUrl={event.eventUrl}
                                         tickets={event.tickets}
                                         locationUrl={event.locationUrl}
+                                        key={event.date.day + event.date.month + event.date.time}
                                     />
                                 ))}
                         </div>
