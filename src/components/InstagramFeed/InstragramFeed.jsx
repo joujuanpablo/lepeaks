@@ -22,10 +22,14 @@ class InstagramFeed extends React.Component {
         return (
           <div className="instagram-feed">
             {this.state.posts.map((post, index) => 
-              <div className="post" id={post.id}>
+              <a href={post.link} className="post" key={post.id}>
                 <img src={post.images.low_resolution.url} alt=""/>
-                <div className="comment">{index}</div>
-              </div>
+                <div className="comment">
+                  {
+                    post.caption === null ? '' : post.caption.text
+                  }
+                  </div>
+              </a>
             )}
           </div>
         )
