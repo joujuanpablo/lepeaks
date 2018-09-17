@@ -1,6 +1,4 @@
 import React from 'react';
-import LoaderImage from '../../images/Hero/andrew-charney-loader.jpg';
-import LoaderImagee from '../../images/Hero/michael-heuser-loader.png';
 import Slider from 'react-slick';
 
 class InstagramFeed extends React.Component {
