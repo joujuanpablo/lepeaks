@@ -13,10 +13,10 @@ export default (props) => {
         <div className="gallery-page">
             <HeroImage imageUrl={Image} loaderImageUrl={LoaderImage} heroHeight="100vh">
                 <h1 className="gallery-title">Gallery</h1>
+                <InstagramFeed/>
             </HeroImage>
             <Header logo={logo} solid="" />
             <img className="under-construction" src={UnderConstruction} alt="under construction"/>
-            <InstagramFeed/>
         </div>
     )
 }

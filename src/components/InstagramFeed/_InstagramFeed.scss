@@ -1,0 +1,28 @@
+.instagram-feed {
+    width: 100%;
+    .slick-slider {
+        height: 400px;
+        .slick-list {
+            height: 100%;
+            .slick-track {
+                height: 100%;
+                .slick-slide {
+                    height: 100%;
+                    div {
+                        height: 100%;
+                        .post {
+                            padding: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img, video {
+                                width: 100%;
+                            }
+                        }
+                    }
+            
+                }
+            }
+        }
+    }
+}

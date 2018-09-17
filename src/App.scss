@@ -14,10 +14,15 @@
 @import 'components/SoundCloudPlayer/_SoundCloudPlayer';
 @import 'components/EventLink/_EventLink';
 @import 'components/Gallery/Gallery';
+@import 'components/InstagramFeed/InstagramFeed';
 //Views
 @import 'components/PrivacyPolicy/_PrivacyPolicy';
 @import 'components/Home/_Home';
 @import 'components/Contact/_Contact';
+
+//libraries
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 //Defaults
 .App {

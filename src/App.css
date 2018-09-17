@@ -1,3 +1,5 @@
+@import url(~slick-carousel/slick/slick.css);
+@import url(~slick-carousel/slick/slick-theme.css);
 .main-nav--wrapper {
   height: 100%; }
   .main-nav--wrapper .main-nav {
@@ -379,6 +381,26 @@ footer {
   @media (max-width: 767.98px) {
     .gallery-page h1 {
       font-size: 3rem; } }
+
+.instagram-feed {
+  width: 100%; }
+  .instagram-feed .slick-slider {
+    height: 400px; }
+    .instagram-feed .slick-slider .slick-list {
+      height: 100%; }
+      .instagram-feed .slick-slider .slick-list .slick-track {
+        height: 100%; }
+        .instagram-feed .slick-slider .slick-list .slick-track .slick-slide {
+          height: 100%; }
+          .instagram-feed .slick-slider .slick-list .slick-track .slick-slide div {
+            height: 100%; }
+            .instagram-feed .slick-slider .slick-list .slick-track .slick-slide div .post {
+              padding: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              .instagram-feed .slick-slider .slick-list .slick-track .slick-slide div .post img, .instagram-feed .slick-slider .slick-list .slick-track .slick-slide div .post video {
+                width: 100%; }
 
 .privacy-policy .privacy-terms-text {
   margin-top: 160px;
