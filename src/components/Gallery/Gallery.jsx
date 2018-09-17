@@ -1,5 +1,4 @@
 import React from 'react';
-import UnderConstruction from '../../images/underConstruction.gif';
 import HeroImage from '../HeroImage/HeroImage';
 import Image from '../../images/Hero/michael-heuser.png';
 import LoaderImage from '../../images/Hero/michael-heuser-loader.png'
@@ -13,10 +12,12 @@ export default (props) => {
         <div className="gallery-page">
             <HeroImage imageUrl={Image} loaderImageUrl={LoaderImage} heroHeight="100vh">
                 <h1 className="gallery-title">Gallery</h1>
-                <InstagramFeed/>
             </HeroImage>
             <Header logo={logo} solid="" />
-            <img className="under-construction" src={UnderConstruction} alt="under construction"/>
+            <div className="container gallery-wrapper">
+                <h2>Instagram Feed</h2>
+                <InstagramFeed/>
+            </div>
         </div>
     )
 }

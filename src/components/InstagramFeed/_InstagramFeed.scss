@@ -1,7 +1,17 @@
 .instagram-feed {
     width: 100%;
     .slick-slider {
-        height: 400px;
+        height: 300px;
+        .slick-prev::before, .slick-next::before {
+            font-size: 25px;
+            color: black;
+            transition: all ease-in-out 0.6s;
+        }
+        .slick-prev::before:hover, .slick-next::before:hover {
+            color: black;
+            transition: all ease-in-out 0.6s;
+        }
+
         .slick-list {
             height: 100%;
             .slick-track {

@@ -23,7 +23,7 @@ class InstagramFeed extends React.Component {
 
   render() {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 4,
@@ -58,7 +58,7 @@ class InstagramFeed extends React.Component {
 
     return (
       <div className="instagram-feed">
-        <div className="container">
+        <div className="">
           <Slider {...settings}>
             {this.state.posts.map((post, index) => 
               <div className="post-wrapper">

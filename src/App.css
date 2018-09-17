@@ -382,10 +382,30 @@ footer {
     .gallery-page h1 {
       font-size: 3rem; } }
 
+.gallery-page .gallery-wrapper {
+  padding-top: 30px;
+  -webkit-box-shadow: 0px -22px 36px -27px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -22px 36px -27px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -22px 36px -27px rgba(0, 0, 0, 0.75); }
+  .gallery-page .gallery-wrapper h2 {
+    font-family: "Permanent Marker", cursive, "Arial Header";
+    font-size: 2rem;
+    text-align: left; }
+    @media (max-width: 767.98px) {
+      .gallery-page .gallery-wrapper h2 {
+        font-size: 1rem; } }
+
 .instagram-feed {
   width: 100%; }
   .instagram-feed .slick-slider {
-    height: 400px; }
+    height: 300px; }
+    .instagram-feed .slick-slider .slick-prev::before, .instagram-feed .slick-slider .slick-next::before {
+      font-size: 25px;
+      color: black;
+      transition: all ease-in-out 0.6s; }
+    .instagram-feed .slick-slider .slick-prev::before:hover, .instagram-feed .slick-slider .slick-next::before:hover {
+      color: black;
+      transition: all ease-in-out 0.6s; }
     .instagram-feed .slick-slider .slick-list {
       height: 100%; }
       .instagram-feed .slick-slider .slick-list .slick-track {
