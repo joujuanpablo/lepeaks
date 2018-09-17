@@ -373,6 +373,13 @@ footer {
               height: 40px;
               width: 100px; } }
 
+.gallery-page h1 {
+  font-family: "Permanent Marker", cursive, "Arial Header";
+  font-size: 4rem; }
+  @media (max-width: 767.98px) {
+    .gallery-page h1 {
+      font-size: 3rem; } }
+
 .privacy-policy .privacy-terms-text {
   margin-top: 160px;
   margin-bottom: 110px;

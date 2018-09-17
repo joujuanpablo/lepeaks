@@ -1,7 +1,8 @@
 import React from 'react';
 import UnderConstruction from '../../images/underConstruction.gif';
 import HeroImage from '../HeroImage/HeroImage';
-import Image from '../../images/Hero/andrew-charney.jpg';
+import Image from '../../images/Hero/michael-heuser.png';
+import LoaderImage from '../../images/Hero/michael-heuser-loader.png'
 import InstagramFeed from '../../components/InstagramFeed/InstragramFeed'
 import Header from '../Header/Header';
 import logo from '../../images/logo-white.png';
@@ -10,10 +11,10 @@ export default (props) => {
     
     return (
         <div className="gallery-page">
-            <Header logo={logo} solid="solid" />
-            <HeroImage imageUrl={Image} heroHeight="300px">
+            <HeroImage imageUrl={Image} loaderImageUrl={LoaderImage} heroHeight="100vh">
+                <h1 className="gallery-title">Gallery</h1>
             </HeroImage>
-            Gallery Page
+            <Header logo={logo} solid="" />
             <img className="under-construction" src={UnderConstruction} alt="under construction"/>
             <InstagramFeed/>
         </div>
