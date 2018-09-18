@@ -11,10 +11,9 @@ import TermsConds from '../TermsConds/TermsConds';
 import PrivacyPolicy from '../PrivacyPolicy/PrivacyPolicy';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faMobile } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMobile, faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faEnvelope, faMobile); //font awesome brands
+library.add(fab, faEnvelope, faMobile, faAngleDoubleDown); //font awesome brands
 
 class App extends Component {
  

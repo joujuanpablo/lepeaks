@@ -381,6 +381,14 @@ footer {
   @media (max-width: 767.98px) {
     .gallery-page h1 {
       font-size: 3rem; } }
+  .gallery-page h1.gallery-arrow {
+    opacity: 0;
+    transition: all ease-in-out 0.6s;
+    transform: translateY(50px); }
+    .gallery-page h1.gallery-arrow.arrow-showing {
+      opacity: 1;
+      transition: all ease-in-out 0.6s;
+      transform: translateY(0px); }
 
 .gallery-page .gallery-wrapper {
   padding-top: 30px;

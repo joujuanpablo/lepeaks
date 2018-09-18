@@ -5,6 +5,19 @@
         @include media-breakpoint-down(sm) {
             font-size: 3rem;
         }
+        
+        &.gallery-arrow {
+            opacity: 0;
+            transition: all ease-in-out 0.6s;
+            transform: translateY(50px);
+
+            &.arrow-showing {
+                opacity: 1;
+                transition: all ease-in-out 0.6s;
+                transform: translateY(0px);
+            }
+        }
+
     }
     .gallery-wrapper {
         padding-top: 30px;
