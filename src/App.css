@@ -427,8 +427,38 @@ footer {
               display: flex;
               align-items: center;
               justify-content: center; }
-              .instagram-feed .slick-slider .slick-list .slick-track .slick-slide div .post img, .instagram-feed .slick-slider .slick-list .slick-track .slick-slide div .post video {
+              .instagram-feed .slick-slider .slick-list .slick-track .slick-slide div .post video {
                 width: 100%; }
+              .instagram-feed .slick-slider .slick-list .slick-track .slick-slide div .post .overlay-image {
+                display: flex;
+                align-items: center;
+                justify-content: center; }
+                .instagram-feed .slick-slider .slick-list .slick-track .slick-slide div .post .overlay-image a {
+                  position: relative;
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  height: auto; }
+                .instagram-feed .slick-slider .slick-list .slick-track .slick-slide div .post .overlay-image img {
+                  display: block;
+                  width: 100%;
+                  height: auto; }
+                .instagram-feed .slick-slider .slick-list .slick-track .slick-slide div .post .overlay-image .text {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  background-color: rgba(0, 0, 0, 0.5);
+                  opacity: 0;
+                  transition: all ease-in-out 0.5s; }
+                  .instagram-feed .slick-slider .slick-list .slick-track .slick-slide div .post .overlay-image .text:hover {
+                    opacity: 1;
+                    transition: all ease-in-out 0.5s; }
 
 .privacy-policy .privacy-terms-text {
   margin-top: 160px;

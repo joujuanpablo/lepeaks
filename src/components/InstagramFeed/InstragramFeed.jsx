@@ -58,16 +58,23 @@ class InstagramFeed extends React.Component {
       <div className="instagram-feed">
         <div className="">
           <Slider {...settings}>
-            {this.state.posts.map((post, index) => 
-              <div className="post-wrapper">
-                  <div className="post" key={post.id}>
+            {this.state.posts.map((post) => 
+              <div className="post-wrapper" key={post.id}>
+                  <div className="post">
                   { post.type === 'video' 
-                    ?   <video 
-                          src={post.videos.standard_resolution.url}
-                          type="video/mp4"
-                          controls="play/pause"> 
-                        </video>
-                    :  <img src={post.images.low_resolution.url} alt={post.tags}/>
+                    ? <video 
+                      src={post.videos.standard_resolution.url}
+                      type="video/mp4"
+                      controls="play/pause"> 
+                      </video>
+                    : <div className="overlay-image">
+                        <a href={post.link} target="_blank">
+                            <img src={post.images.low_resolution.url} alt={post.tags}/>
+                            <div className="text">View in Instagram</div>
+                        </a>
+                      </div>
+                    
+                      
                   }
                 </div>
               </div>
