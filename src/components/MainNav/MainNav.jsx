@@ -58,16 +58,16 @@ class MainNav extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to={"/gallery"}>Gallery</Link>
+                <Link to={"/gallery"} onClick={() => window.scrollTo(0, 0)}>Gallery</Link>
               </NavItem>
               <NavItem>
-                <Link to={"/story"}>Story</Link>
+                <Link to={"/story"} onClick={() => window.scrollTo(0, 0)}>Story</Link>
               </NavItem>
               <NavItem>
-                <Link to={"/events"}>Events</Link>
+                <Link to={"/events"} onClick={() => window.scrollTo(0, 0)}>Events</Link>
               </NavItem>
               <NavItem>
-                <Link to={"/contact"}>Contact</Link>
+                <Link to={"/contact"} onClick={() => window.scrollTo(0, 0)}>Contact</Link>
               </NavItem>
               <NavItem>
                 <Link to={"https://www.instagram.com/lepeaksmusic/"}>

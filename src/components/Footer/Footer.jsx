@@ -44,9 +44,9 @@ class Footer extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="admin-links col-12 col-md-6">
-                                <Link to={'/terms-conditions'}>Terms & Conditions</Link>
-                                <Link to={'/privacy-policy'}>Privacy Policy</Link>
-                                <Link to={'/contact'}>Contact</Link>
+                                <Link to={'/terms-conditions'} onClick={() => window.scrollTo(0, 0)}>Terms & Conditions</Link>
+                                <Link to={'/privacy-policy'} onClick={() => window.scrollTo(0, 0)}>Privacy Policy</Link>
+                                <Link to={'/contact'} onClick={() => window.scrollTo(0, 0)}>Contact</Link>
                                 <a href="http://whymusicmatters.com/whymusicmatters.com/index.html">Why Music Matters</a>
                             </div>  
                             <div className="newsletter col-12 col-md-6">
