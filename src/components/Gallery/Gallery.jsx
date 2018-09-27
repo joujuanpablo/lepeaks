@@ -50,6 +50,8 @@ class Gallery extends React.Component {
                 <div className="container gallery-wrapper">
                     <h2>Instagram Feed</h2>
                     <InstagramFeed />
+                    <h2>Le Peaks Media</h2>
+                    <p>coming soon</p>
                     <div className="lightbox-gallery">
                         <div>
                             <button type="button" onClick={() => this.setState({ isOpen: true })}>

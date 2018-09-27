@@ -16,7 +16,7 @@ class TipJarButton extends React.Component {
     render() {
 
         return (
-            <a href="https://digitaltipjar.com/lepeaks?_external=true" className={`dtj-tip-button button ${this.props.context}`} data-username="lepeaks">
+            <a href="https://digitaltipjar.com/lepeaks?_external=true" target="_blank" rel="noopener noreferrer" className={`dtj-tip-button button ${this.props.context}`} data-username="lepeaks">
                 Tip Jar&nbsp;&nbsp;
                 <TipJarIcon color={"#FFFFFF"} pseudoState={"normal"}/>
                 <TipJarIcon color={"#000000"} pseudoState={"hover"}/>
