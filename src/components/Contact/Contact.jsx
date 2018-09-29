@@ -13,7 +13,7 @@ export default (props) => {
                     <div className="email info-item">
                         <FontAwesomeIcon icon={'envelope'} size="lg" />
                         <p>
-                            For booking info and media enquiries please message lepeaksmusic@gmail.com
+                            For booking info and media enquiries please message JP at lepeaksmusic@gmail.com
                             </p>
                     </div>
                     <div className="mobile info-item">
