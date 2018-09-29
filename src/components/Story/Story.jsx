@@ -60,13 +60,24 @@ export default () => {
                 <div className="row">
                     <div className="col-sm-12 col-md-7">
                         <div className="text">
+                            <h3>{text.theBreak.subheading}</h3>
+                            <h2>{text.theBreak.heading}</h2>
+                            <p>{text.theBreak.body1}</p>
+                            <p>{text.theBreak.body2}</p>
+                        </div>
+                    </div>
+                    <div className="col-sm-12 col-md-5 image"></div>
+                </div>
+                <div className="row">
+                    <div className="col-sm-12 col-md-7 image"></div>
+                    <div className="col-sm-12 col-md-5">
+                        <div className="text">
                             <h3>{text.theNow.subheading}</h3>
                             <h2>{text.theNow.heading}</h2>
                             <p>{text.theNow.body1}</p>
                             <p>{text.theNow.body2}</p>
                         </div>
                     </div>
-                    <div className="col-sm-12 col-md-5 image"></div>
                 </div>
             </div>
         </div>

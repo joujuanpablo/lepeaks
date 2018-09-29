@@ -619,12 +619,13 @@ footer {
 .story-page .story-content {
   -webkit-box-shadow: 0px -22px 36px -27px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -22px 36px -27px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px -22px 36px -27px rgba(0, 0, 0, 0.75); }
+  box-shadow: 0px -22px 36px -27px rgba(0, 0, 0, 0.75);
+  padding: 20px 0; }
   .story-page .story-content .row {
-    padding: 40px 40px; }
+    padding: 20px 40px; }
     .story-page .story-content .row .text {
       text-align: left;
-      width: 300px; }
+      width: 320px; }
       .story-page .story-content .row .text h2 {
         font-family: "Permanent Marker", cursive, "Arial Header";
         margin: 15px 0; }
