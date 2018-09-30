@@ -5,6 +5,7 @@ import textLogo from '../../images/text-logo.png';
 import Image from '../../images/Hero/andrew-charney.jpg';
 import LoaderImage from '../../images/Hero/andrew-charney-loader.jpg';
 import logo from '../../images/logo-white.png';
+import { Link } from 'react-router-dom';
 
 //components
 import TipJarButton from '../TipJarButton/TipJarButton';
@@ -85,7 +86,7 @@ class Home extends React.Component {
                                 <h3>{HomeCopy.aboutRow.heading1}</h3>
                                 <p>{HomeCopy.aboutRow.body1}</p>
                                 <h3>{HomeCopy.aboutRow.heading2}</h3>
-                                <p>{HomeCopy.aboutRow.body2}</p>
+                                <p>{HomeCopy.aboutRow.body2} More on <Link to={'/story'} onClick={() => window.scrollTo(0, 0)}>Story page</Link>.</p>
                                 <h3>{HomeCopy.aboutRow.heading3}</h3>
                                 <p>{HomeCopy.aboutRow.body31}</p>
                                 <p>{HomeCopy.aboutRow.body32}</p>
