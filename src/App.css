@@ -626,6 +626,9 @@ footer {
     .story-page .story-content .row .text {
       text-align: left;
       width: 320px; }
+      @media (max-width: 991.98px) {
+        .story-page .story-content .row .text {
+          width: auto; } }
       .story-page .story-content .row .text h2 {
         font-family: "Permanent Marker", cursive, "Arial Header";
         margin: 15px 0; }
@@ -635,6 +638,21 @@ footer {
       .story-page .story-content .row .text p {
         font-family: "Open Sans", sans-serif;
         font-size: 0.8rem; }
+    .story-page .story-content .row .image {
+      background-size: cover;
+      min-height: 300px; }
+      .story-page .story-content .row .image.the-name {
+        background-image: url("images/portraits/marseille.png"); }
+      .story-page .story-content .row .image.early-history {
+        background-image: url("images/portraits/jeep.jpg");
+        background-position: center right; }
+      .story-page .story-content .row .image.the-job {
+        background-position: center;
+        background-image: url("images/portraits/work-mouth.png"); }
+      .story-page .story-content .row .image.the-break {
+        background-image: url("images/portraits/studio.png"); }
+      .story-page .story-content .row .image.the-now {
+        background-image: url("images/portraits/sangria.png"); }
 
 .App {
   text-align: center; }

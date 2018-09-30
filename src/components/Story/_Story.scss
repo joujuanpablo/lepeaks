@@ -25,6 +25,9 @@
             .text {
                 text-align: left;
                 width: 320px;
+                @include media-breakpoint-down(md) {
+                    width: auto;
+                }
                 h2 {
                     font-family: $marker;
                     margin: 15px 0;
@@ -36,6 +39,27 @@
                 p {
                     font-family: $main-font;
                     font-size: 0.8rem;
+                }
+            }
+            .image {
+                background-size: cover;
+                min-height: 300px;
+                &.the-name {
+                    background-image: url("images/portraits/marseille.png")
+                }
+                &.early-history {
+                    background-image: url("images/portraits/jeep.jpg");
+                    background-position: center right;
+                }
+                &.the-job {
+                    background-position: center;
+                    background-image: url("images/portraits/work-mouth.png")
+                }
+                &.the-break {
+                    background-image: url("images/portraits/studio.png")
+                }
+                &.the-now {
+                    background-image: url("images/portraits/sangria.png")
                 }
             }
         }

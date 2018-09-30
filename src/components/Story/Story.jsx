@@ -22,8 +22,8 @@ export default () => {
             </HeroImage>
             <div className="story-content container">
                 <div className="row">
-                    <div className="col-sm-12 col-md-7 image"></div>
-                    <div className="col-sm-12 col-md-5 text">
+                    <div className="col-sm-12 col-md-6 col-lg-7 image the-name"></div>
+                    <div className="col-sm-12 col-md-6 col-lg-5 text">
                         <div className="text">
                             <h3>{text.theName.subheading}</h3>
                             <h2>{text.theName.heading}</h2>
@@ -33,7 +33,7 @@ export default () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-sm-12 col-md-7">
+                    <div className="col-sm-12 col-md-6 col-lg-5">
                         <div className="text">
                             <h3>{text.earlyHistory.subheading}</h3>
                             <h2>{text.earlyHistory.heading}</h2>
@@ -44,11 +44,11 @@ export default () => {
                             <p>{text.earlyHistory.body5}</p>
                         </div>
                     </div>
-                    <div className="col-sm-12 col-md-5 image"></div>
+                    <div className="col-sm-12 col-md-6 col-lg-7 image early-history"></div>
                 </div>
                 <div className="row">
-                    <div className="col-sm-12 col-md-7 image"></div>
-                    <div className="col-sm-12 col-md-5">
+                    <div className="col-sm-12 col-md-6 col-lg-7 image the-job"></div>
+                    <div className="col-sm-12 col-md-6 col-lg-5">
                         <div className="text">
                             <h3>{text.theJob.subheading}</h3>
                             <h2>{text.theJob.heading}</h2>
@@ -58,7 +58,7 @@ export default () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-sm-12 col-md-7">
+                    <div className="col-sm-12 col-md-6 col-lg-5">
                         <div className="text">
                             <h3>{text.theBreak.subheading}</h3>
                             <h2>{text.theBreak.heading}</h2>
@@ -66,11 +66,11 @@ export default () => {
                             <p>{text.theBreak.body2}</p>
                         </div>
                     </div>
-                    <div className="col-sm-12 col-md-5 image"></div>
+                    <div className="col-sm-12 col-md-6 col-lg-7 image the-break"></div>
                 </div>
                 <div className="row">
-                    <div className="col-sm-12 col-md-7 image"></div>
-                    <div className="col-sm-12 col-md-5">
+                    <div className="col-sm-12 col-md-6 col-lg-7 image the-now"></div>
+                    <div className="col-sm-12 col-md-6 col-lg-5">
                         <div className="text">
                             <h3>{text.theNow.subheading}</h3>
                             <h2>{text.theNow.heading}</h2>
