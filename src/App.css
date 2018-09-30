@@ -407,11 +407,11 @@ footer {
   width: 100%; }
   .instagram-feed .slick-slider {
     height: 300px; }
-    .instagram-feed .slick-slider .slick-prev::before, .instagram-feed .slick-slider .slick-next::before {
+    .instagram-feed .slick-slider .slick-prev:before, .instagram-feed .slick-slider .slick-next:before {
       font-size: 25px;
       color: black;
       transition: all ease-in-out 0.6s; }
-    .instagram-feed .slick-slider .slick-prev::before:hover, .instagram-feed .slick-slider .slick-next::before:hover {
+    .instagram-feed .slick-slider .slick-prev:before:hover, .instagram-feed .slick-slider .slick-next:before:hover {
       color: black;
       transition: all ease-in-out 0.6s; }
     .instagram-feed .slick-slider .slick-list {

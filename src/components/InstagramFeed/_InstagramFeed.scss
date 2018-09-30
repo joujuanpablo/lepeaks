@@ -2,12 +2,12 @@
     width: 100%;
     .slick-slider {
         height: 300px;
-        .slick-prev::before, .slick-next::before {
+        .slick-prev:before, .slick-next:before {
             font-size: 25px;
             color: black;
             transition: all ease-in-out 0.6s;
-        }
-        .slick-prev::before:hover, .slick-next::before:hover {
+        }        
+        .slick-prev:before:hover, .slick-next:before:hover {
             color: black;
             transition: all ease-in-out 0.6s;
         }
