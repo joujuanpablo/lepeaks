@@ -32,5 +32,19 @@
                 font-size: 1rem;
             }
         }
+        .thumbnails {
+            .thumbnail-wrapper {
+                height: 300px;
+                padding: 5px;
+                .image-thumbnail{
+                    background-size: cover;
+                    height: 100%;
+                    position: center center;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
 }

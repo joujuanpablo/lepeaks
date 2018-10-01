@@ -402,11 +402,30 @@ footer {
     @media (max-width: 767.98px) {
       .gallery-page .gallery-wrapper h2 {
         font-size: 1rem; } }
+  .gallery-page .gallery-wrapper .thumbnails .thumbnail-wrapper {
+    height: 300px;
+    padding: 5px; }
+    .gallery-page .gallery-wrapper .thumbnails .thumbnail-wrapper .image-thumbnail {
+      background-size: cover;
+      height: 100%;
+      position: center center; }
+      .gallery-page .gallery-wrapper .thumbnails .thumbnail-wrapper .image-thumbnail:hover {
+        cursor: pointer; }
 
 .instagram-feed {
   width: 100%; }
   .instagram-feed .slick-slider {
     height: 300px; }
+    .instagram-feed .slick-slider .slick-prev {
+      left: -25px; }
+      @media (max-width: 767.98px) {
+        .instagram-feed .slick-slider .slick-prev {
+          left: -8px; } }
+    .instagram-feed .slick-slider .slick-next {
+      right: -25px; }
+      @media (max-width: 767.98px) {
+        .instagram-feed .slick-slider .slick-next {
+          right: -8px; } }
     .instagram-feed .slick-slider .slick-prev:before, .instagram-feed .slick-slider .slick-next:before {
       font-size: 25px;
       color: black;

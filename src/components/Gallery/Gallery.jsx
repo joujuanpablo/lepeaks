@@ -51,12 +51,19 @@ class Gallery extends React.Component {
                     <h2>Instagram Feed</h2>
                     <InstagramFeed />
                     <h2>Le Peaks Media</h2>
-                    <p>coming soon</p>
+                    <p>Coming soon! For now, kittens</p>
                     <div className="lightbox-gallery">
-                        <div>
-                            <button type="button" onClick={() => this.setState({ isOpen: true })}>
-                                Open Lightbox
-                            </button>
+                        <div className="thumbnails row">
+                            {images.map((image, index) => 
+                                <div className="thumbnail-wrapper col-sm-12 col-md-4 col-lg-3">
+                                    <div 
+                                        key={`gallery-image-${index}`}
+                                        className="image-thumbnail" 
+                                        style={{backgroundImage: `url(${image})`}} 
+                                        onClick={() => this.setState({ isOpen: true, photoIndex: index})}>
+                                    </div>
+                                </div>
+                            )}
 
                             {isOpen && (
                                 <Lightbox
