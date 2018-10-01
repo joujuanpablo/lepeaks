@@ -1,10 +1,11 @@
 
 $main-font: 'Open Sans', sans-serif; //le peaks
 $main-font-size: 0.85rem;
+$fallback: Arial, Helvetica, sans-serif;
 
 //decorative fonts
-$amatic: 'Amatic SC', cursive, 'Arial body'; //skinny
-$marker: 'Permanent Marker', cursive, 'Arial Header'; //marker
-$caveat: 'Caveat', cursive, 'Arial body'; 
-$bangers: 'Bangers', cursive;
-$fredoka: 'Fredoka One', cursive;
+$amatic: 'Amatic SC', cursive, $fallback; //skinny
+$marker: 'Permanent Marker', cursive, $fallback; //marker
+$caveat: 'Caveat', cursive, $fallback; 
+$bangers: 'Bangers', cursive, $fallback;
+$fredoka: 'Fredoka One', cursive, $fallback;

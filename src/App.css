@@ -77,7 +77,7 @@
     .hero-image {
       height: 500px !important; } }
   .hero-image .intro-text {
-    font-family: "Amatic SC", cursive, "Arial body";
+    font-family: "Amatic SC", cursive, Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     margin-top: 20px; }
     @media (max-width: 767.98px) {
@@ -117,7 +117,7 @@ footer {
       flex-direction: column;
       align-items: flex-start;
       color: white;
-      font-family: "Permanent Marker", cursive, "Arial Header";
+      font-family: "Permanent Marker", cursive, Arial, Helvetica, sans-serif;
       font-size: 0.9rem; }
       footer .solid .newsletter .copyright {
         color: #FFC327;
@@ -184,7 +184,7 @@ footer {
   color: white;
   border: 2px solid white;
   padding: 10px;
-  font-family: "Permanent Marker", cursive, "Arial Header";
+  font-family: "Permanent Marker", cursive, Arial, Helvetica, sans-serif;
   transition: all 0.5s ease-in-out; }
   @media (max-width: 767.98px) {
     .dtj-tip-button {
@@ -217,7 +217,7 @@ footer {
   color: white;
   border: 2px solid white;
   padding: 10px;
-  font-family: "Permanent Marker", cursive, "Arial Header";
+  font-family: "Permanent Marker", cursive, Arial, Helvetica, sans-serif;
   transition: all 0.5s ease-in-out;
   background-color: transparent; }
   @media (max-width: 767.98px) {
@@ -233,7 +233,7 @@ footer {
     outline: none; }
 
 .soundcloud-player {
-  width: 80%;
+  width: 60%;
   height: 280px;
   padding: 20px;
   opacity: 1;
@@ -274,7 +274,7 @@ footer {
       background-color: #FFC327;
       height: 100%;
       font-size: 2rem;
-      font-family: "Permanent Marker", cursive, "Arial Header";
+      font-family: "Permanent Marker", cursive, Arial, Helvetica, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -302,7 +302,7 @@ footer {
           .event-summary .wrapper .info .row .details-box .venue {
             color: #FFC327;
             font-size: 2rem;
-            font-family: "Amatic SC", cursive, "Arial body";
+            font-family: "Amatic SC", cursive, Arial, Helvetica, sans-serif;
             transition: all 0.5s ease-in-out; }
             @media (max-width: 767.98px) {
               .event-summary .wrapper .info .row .details-box .venue {
@@ -313,7 +313,7 @@ footer {
               transition: all 0.5s ease-in-out; }
           .event-summary .wrapper .info .row .details-box .time {
             font-size: 1.5rem;
-            font-family: "Amatic SC", cursive, "Arial body";
+            font-family: "Amatic SC", cursive, Arial, Helvetica, sans-serif;
             color: #CD224C; }
             @media (max-width: 767.98px) {
               .event-summary .wrapper .info .row .details-box .time {
@@ -365,7 +365,7 @@ footer {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          font-family: "Permanent Marker", cursive, "Arial Header";
+          font-family: "Permanent Marker", cursive, Arial, Helvetica, sans-serif;
           height: 50px;
           width: 150px; }
           .event-summary .wrapper .info .buttons-box .button:hover {
@@ -376,7 +376,7 @@ footer {
               width: 100px; } }
 
 .gallery-page h1 {
-  font-family: "Permanent Marker", cursive, "Arial Header";
+  font-family: "Permanent Marker", cursive, Arial, Helvetica, sans-serif;
   font-size: 4rem; }
   @media (max-width: 767.98px) {
     .gallery-page h1 {
@@ -396,7 +396,7 @@ footer {
   -moz-box-shadow: 0px -22px 36px -27px rgba(0, 0, 0, 0.75);
   box-shadow: 0px -22px 36px -27px rgba(0, 0, 0, 0.75); }
   .gallery-page .gallery-wrapper h2 {
-    font-family: "Permanent Marker", cursive, "Arial Header";
+    font-family: "Permanent Marker", cursive, Arial, Helvetica, sans-serif;
     font-size: 2rem;
     text-align: left; }
     @media (max-width: 767.98px) {
@@ -465,7 +465,7 @@ footer {
   margin-bottom: 110px;
   text-align: left; }
   .privacy-policy .privacy-terms-text h1, .privacy-policy .privacy-terms-text h3 {
-    font-family: "Permanent Marker", cursive, "Arial Header";
+    font-family: "Permanent Marker", cursive, Arial, Helvetica, sans-serif;
     margin-bottom: 20px; }
   .privacy-policy .privacy-terms-text p, .privacy-policy .privacy-terms-text li {
     font-family: "Open Sans", sans-serif;
@@ -476,7 +476,7 @@ footer {
   .homepage .about-row .about-column {
     padding: 8% 0; }
     .homepage .about-row .about-column .text-container {
-      font-family: "Caveat", cursive, "Arial body";
+      font-family: "Caveat", cursive, Arial, Helvetica, sans-serif;
       color: #859298;
       text-align: justify;
       height: 100%;
@@ -489,7 +489,7 @@ footer {
         padding-bottom: 20px; }
       .homepage .about-row .about-column .text-container h3 {
         text-align: end;
-        font-family: "Permanent Marker", cursive, "Arial Header";
+        font-family: "Permanent Marker", cursive, Arial, Helvetica, sans-serif;
         font-size: 1.2rem;
         color: rgba(14, 32, 36, 0.9); }
     .homepage .about-row .about-column .image-container {
@@ -512,7 +512,7 @@ footer {
       height: 100%;
       padding: 0; }
       .homepage .upcoming-shows .events-wrapper h1 {
-        font-family: "Permanent Marker", cursive, "Arial Header";
+        font-family: "Permanent Marker", cursive, Arial, Helvetica, sans-serif;
         padding-top: 10px;
         padding-bottom: 20px;
         margin-bottom: 0;
@@ -570,7 +570,7 @@ footer {
     width: 100%; }
     .contact-page .wrapper .contact-details h1 {
       margin-bottom: 30px;
-      font-family: "Permanent Marker", cursive, "Arial Header";
+      font-family: "Permanent Marker", cursive, Arial, Helvetica, sans-serif;
       font-size: 4rem; }
       @media (max-width: 767.98px) {
         .contact-page .wrapper .contact-details h1 {
@@ -583,7 +583,7 @@ footer {
       .contact-page .wrapper .contact-details .info-item svg {
         flex: 1; }
       .contact-page .wrapper .contact-details .info-item p {
-        font-family: "Caveat", cursive, "Arial body";
+        font-family: "Caveat", cursive, Arial, Helvetica, sans-serif;
         font-size: 1.5rem;
         margin-bottom: 0;
         padding-left: 10px;
@@ -608,7 +608,7 @@ footer {
       text-align: center; } }
 
 .story-page h1 {
-  font-family: "Permanent Marker", cursive, "Arial Header";
+  font-family: "Permanent Marker", cursive, Arial, Helvetica, sans-serif;
   font-size: 3.5rem;
   margin-bottom: 15px; }
 
@@ -630,10 +630,10 @@ footer {
         .story-page .story-content .row .text {
           width: auto; } }
       .story-page .story-content .row .text h2 {
-        font-family: "Permanent Marker", cursive, "Arial Header";
+        font-family: "Permanent Marker", cursive, Arial, Helvetica, sans-serif;
         margin: 15px 0; }
       .story-page .story-content .row .text h3 {
-        font-family: "Amatic SC", cursive, "Arial body";
+        font-family: "Amatic SC", cursive, Arial, Helvetica, sans-serif;
         font-size: 1rem; }
       .story-page .story-content .row .text p {
         font-family: "Open Sans", sans-serif;
