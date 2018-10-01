@@ -547,7 +547,8 @@ footer {
   background-size: cover;
   background-position: center;
   margin-bottom: 60px;
-  height: 500px;
+  height: 80vh;
+  min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
