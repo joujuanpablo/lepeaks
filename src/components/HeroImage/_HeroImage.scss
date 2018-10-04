@@ -10,6 +10,7 @@
     font-family: '';
     @include media-breakpoint-down(sm) {
         height: 500px !important;
+        background-position: center bottom;
     }
 
     .intro-text {

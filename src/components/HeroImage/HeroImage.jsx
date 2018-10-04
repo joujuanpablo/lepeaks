@@ -7,7 +7,7 @@ import React from 'react';
             background: "url("+this.props.imageUrl+"), url("+this.props.loaderImageUrl+")",
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
-            backgroundPosition: "center",
+            backgroundPosition: "center bottom",
             height: this.props.heroHeight,
         };
 
